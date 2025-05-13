@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ephsobha.onrender.com/sitemap.xml
