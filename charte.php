@@ -13,7 +13,6 @@ $tagline = "Au service de votre santé";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charte du Patient - <?php echo $hospital_name; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <style>
         :root {
@@ -55,7 +54,7 @@ $tagline = "Au service de votre santé";
             background-attachment: fixed;
             color: white;
             text-align: center;
-            padding: 120px 20px;
+            padding: 135px 20px;
             position: relative;
             margin-bottom: 60px;
         }

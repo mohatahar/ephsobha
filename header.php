@@ -89,31 +89,31 @@ $hospital_name = "EPH SOBHA";
         .dropdown {
             position: relative;
         }
-        
+
         .dropdown-toggle {
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .dropdown-menu {
             display: none;
             position: absolute;
             background-color: var(--dark-color);
             min-width: 200px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             border-radius: 4px;
             padding: 8px 0;
             right: 0;
         }
-        
+
         .dropdown-menu li {
             width: 100%;
             margin: 0;
         }
-        
+
         .dropdown-menu a {
             display: block;
             padding: 10px 15px;
@@ -121,20 +121,20 @@ $hospital_name = "EPH SOBHA";
             color: #333;
             transition: background-color 0.3s;
         }
-        
+
         .dropdown-menu a:hover {
             background-color: #f5f5f5;
         }
-        
+
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-        
+
         /* Style pour le lien de déconnexion */
         .dropdown-menu a[href="logout.php"] {
             color: #dc3545;
         }
-        
+
         /* Responsive styles */
         @media (max-width: 768px) {
             .dropdown-menu {
@@ -144,13 +144,87 @@ $hospital_name = "EPH SOBHA";
                 border-radius: 0;
                 padding-left: 20px;
             }
-            
+
             .dropdown:hover .dropdown-menu {
                 display: none;
             }
-            
+
             .dropdown.active .dropdown-menu {
                 display: block;
+            }
+        }
+
+        .ia-floating-button {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease, opacity 0.3s, visibility 0.3s;
+        }
+
+        .ia-floating-button:hover {
+            background-color: var(--dark-color);
+            transform: scale(1.05);
+        }
+
+        .ia-floating-button i {
+            font-size: 24px;
+        }
+
+        .ia-floating-tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            left: 75px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .ia-floating-button:hover .ia-floating-tooltip {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ia-floating-button {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .ia-floating-button i {
+                font-size: 20px;
+            }
+        }
+
+        /* Animation du bouton */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
             }
         }
     </style>
@@ -159,13 +233,13 @@ $hospital_name = "EPH SOBHA";
         document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const navMenu = document.querySelector('.nav-menu');
-            
+
             // Gestion du dropdown sur mobile
             const dropdownToggle = document.querySelector('.dropdown-toggle');
             const dropdown = document.querySelector('.dropdown');
-            
+
             if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', function(e) {
+                dropdownToggle.addEventListener('click', function (e) {
                     e.preventDefault();
                     dropdown.classList.toggle('active');
                 });
