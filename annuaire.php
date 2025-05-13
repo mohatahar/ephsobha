@@ -208,32 +208,6 @@ $tagline = "Au service de votre santé";
             background-color: #005d91;
         }
 
-        /* Info panel pour les coordonnées */
-        .coordinates-panel {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 12px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            font-size: 0.9rem;
-            max-width: 300px;
-            display: none;
-        }
-
-        .coordinates-panel h4 {
-            margin: 0 0 8px 0;
-            color: var(--primary-color);
-            font-size: 1rem;
-        }
-
-        .coordinates-panel p {
-            margin: 0;
-            line-height: 1.4;
-        }
-
         /* Bouton retour en haut */
         .back-to-top {
             position: fixed;
@@ -335,34 +309,6 @@ $tagline = "Au service de votre santé";
                 margin-bottom: 10px;
             }
         }
-
-          /* Correction pour l'information de localisation */
-    .location-info {
-        position: absolute;
-        background-color: white;
-        border-left: 4px solid #0077b6;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        padding: 15px;
-        width: 300px;
-        z-index: 1000;
-        display: none; /* Caché par défaut */
-    }
-    
-    .location-info h3 {
-        margin-top: 0;
-        color: #0077b6;
-    }
-    
-    /* Style pour le bouton de fermeture */
-    .close-info {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        cursor: pointer;
-        font-weight: bold;
-        color: #666;
-    }
     </style>
 </head>
 
@@ -399,58 +345,121 @@ $tagline = "Au service de votre santé";
                         </tr>
                     </thead>
                     <tbody>
+                         <tr data-aos="fade-up" data-aos-delay="300">
+                            <td data-label="Nom">DSP CHLEF</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Chlef</td>
+                            <td data-label="Téléphone">+213 27 43 31 33</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.16285, 1.34394, 'DSP CHLEF')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
                         <tr data-aos="fade-up" data-aos-delay="300">
                             <td data-label="Nom">EPH Sobha</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
-                            <td data-label="Adresse">Commune de Sobha, Wilaya de Chlef</td>
+                            <td data-label="Adresse">Sobha</td>
                             <td data-label="Téléphone">+213 27 71 91 97</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.10538, 1.10444, 'EPH Sobha')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
                         </tr>
                         <tr data-aos="fade-up" data-aos-delay="350">
-                            <td data-label="Nom">CHU Chlef</td>
+                            <td data-label="Nom">EPH Soeurs bedj</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
-                            <td data-label="Adresse">Route de Ténès, Chlef</td>
-                            <td data-label="Téléphone">+213 27 72 22 55</td>
+                            <td data-label="Adresse">Cité Bensouna, Chlef</td>
+                            <td data-label="Téléphone">+213 27 79 84 03</td>
                             <td data-label="Action"><button class="locate-btn"
-                                    onclick="showLocation(36.1541, 1.3367, 'CHU Chlef')"><i
+                                    onclick="showLocation(36.1593, 1.3212, 'EPH Soeurs bedj')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EPH Ouled Mohammed</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Cité elnassr, Chlef</td>
+                            <td data-label="Téléphone">+213 27 77 33 34</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.1573, 1.3624, 'EPH Ouled Mohammed')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EPH Chorfa</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Hay El Badr, Chlef</td>
+                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.1466, 1.3132, 'EPH Chorfa')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EPH Ain Merane</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Ain Merane</td>
+                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.1589, 0.9622, 'EPH Ain Merane')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EPH Chettia</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Chettia</td>
+                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.2047, 1.2611, 'EPH Chettia')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                         <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EPH Ténès</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Ténès</td>
+                            <td data-label="Téléphone">+213 27 76 71 71</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.5128, 1.3068, 'EPH Ténès')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="350">
+                            <td data-label="Nom">EHS Ténès</td>
+                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
+                            <td data-label="Adresse">Ténès</td>
+                            <td data-label="Téléphone">+213 27 45 18 77</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.5037, 1.2697, 'EHS Ténès')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
                         </tr>
                         <tr data-aos="fade-up" data-aos-delay="400">
-                            <td data-label="Nom">Clinique El Rahma</td>
+                            <td data-label="Nom">Clinique El Hikma</td>
                             <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
-                            <td data-label="Adresse">Rue Larbi Ben M'hidi, Chlef</td>
-                            <td data-label="Téléphone">+213 27 77 20 30</td>
+                            <td data-label="Adresse">Cité 184 logement AADL, Chlef</td>
+                            <td data-label="Téléphone">+213 27 77 50 50</td>
                             <td data-label="Action"><button class="locate-btn"
-                                    onclick="showLocation(36.1661, 1.3394, 'Clinique El Rahma')"><i
+                                    onclick="showLocation(36.1629, 1.3298, 'Clinique El Hikma')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
                         </tr>
-                        <tr data-aos="fade-up" data-aos-delay="450">
-                            <td data-label="Nom">Polyclinique Ben Boulaïd</td>
-                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
-                            <td data-label="Adresse">Centre-ville, Chlef</td>
-                            <td data-label="Téléphone">+213 27 72 15 45</td>
+                        <tr data-aos="fade-up" data-aos-delay="400">
+                            <td data-label="Nom">Clinique les orangers</td>
+                            <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
+                            <td data-label="Adresse">Bd . Abd El Hamid Ibn Badis, Chlef</td>
+                            <td data-label="Téléphone">+213 27 77 18 63</td>
                             <td data-label="Action"><button class="locate-btn"
-                                    onclick="showLocation(36.1629, 1.3394, 'Polyclinique Ben Boulaïd')"><i
+                                    onclick="showLocation(36.1638, 1.3301, 'Clinique les orangers')"><i
+                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
+                        </tr>
+                        <tr data-aos="fade-up" data-aos-delay="400">
+                            <td data-label="Nom">Clinique Ennasr</td>
+                            <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
+                            <td data-label="Adresse">Cité elnassr, Chlef</td>
+                            <td data-label="Téléphone">+213 27 77 83 83</td>
+                            <td data-label="Action"><button class="locate-btn"
+                                    onclick="showLocation(36.1489, 1.3682, 'Clinique Ennasr')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
                         </tr>
                         <tr data-aos="fade-up" data-aos-delay="500">
-                            <td data-label="Nom">Clinique El Amal</td>
+                            <td data-label="Nom">Clinique El Ihssene</td>
                             <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
-                            <td data-label="Adresse">Avenue de l'ALN, Chlef</td>
-                            <td data-label="Téléphone">+213 27 76 33 44</td>
+                            <td data-label="Adresse">Cia des Citronniers, Chlef</td>
+                            <td data-label="Téléphone">+213 27 77 62 85</td>
                             <td data-label="Action"><button class="locate-btn"
-                                    onclick="showLocation(36.1578, 1.3531, 'Clinique El Amal')"><i
-                                        class="fas fa-map-marker-alt"></i> Localiser</button></td>
-                        </tr>
-                        <tr data-aos="fade-up" data-aos-delay="550">
-                            <td data-label="Nom">Hôpital Haï Salam</td>
-                            <td data-label="Secteur"><span class="sector-public">Public</span></td>
-                            <td data-label="Adresse">Quartier Haï Salam, Chlef</td>
-                            <td data-label="Téléphone">+213 27 73 10 20</td>
-                            <td data-label="Action"><button class="locate-btn"
-                                    onclick="showLocation(36.1492, 1.3276, 'Hôpital Haï Salam')"><i
+                                    onclick="showLocation(36.1700, 1.3416, 'Clinique El Ihssene')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
                         </tr>
                     </tbody>
@@ -468,14 +477,7 @@ $tagline = "Au service de votre santé";
                     </select>
                 </div>
 
-                <div class="map-container" id="map">
-                    <!-- Panneau des coordonnées -->
-                    <div id="coordinates-panel" class="coordinates-panel">
-                        <h4>Information de localisation</h4>
-                        <p id="location-name"></p>
-                        <p id="location-address"></p>
-                    </div>
-                </div>
+                <div class="map-container" id="map"></div>
             </section>
 
             <div class="info-card" data-aos="fade-up" data-aos-delay="450" style="margin-top: 30px;">
@@ -536,14 +538,21 @@ $tagline = "Au service de votre santé";
 
         // Établissements de santé avec leurs coordonnées et adresses
         const etablissements = [
-            { name: 'EPH Sobha', lat: 36.10538, lon: 1.10444, sector: 'Public', address: 'Commune de Sobha, Wilaya de Chlef' },
-            { name: 'CHU Chlef', lat: 36.1541, lon: 1.3367, sector: 'Public', address: 'Route de Ténès, Chlef' },
-            { name: 'Clinique El Rahma', lat: 36.1661, lon: 1.3394, sector: 'Privé', address: 'Rue Larbi Ben M\'hidi, Chlef' },
-            { name: 'Polyclinique Ben Boulaïd', lat: 36.1629, lon: 1.3394, sector: 'Public', address: 'Centre-ville, Chlef' },
-            { name: 'Clinique El Amal', lat: 36.1578, lon: 1.3531, sector: 'Privé', address: 'Avenue de l\'ALN, Chlef' },
-            { name: 'Hôpital Haï Salam', lat: 36.1492, lon: 1.3276, sector: 'Public', address: 'Quartier Haï Salam, Chlef' }
+            { name: 'DSP CHLEF', lat: 36.16285, lon: 1.34394, sector: 'Public', address: 'Chlef' },
+            { name: 'EPH Sobha', lat: 36.10538, lon: 1.10444, sector: 'Public', address: 'Sobha' },
+            { name: 'EPH Soeurs bedj', lat: 36.1593, lon: 1.3212, sector: 'Public', address: 'Cité Bensouna, Chlef' },
+            { name: 'EPH Ouled Mohammed', lat: 36.1573, lon: 1.3624, sector: 'Public', address: 'Cité elnassr, Chlef' },
+            { name: 'EPH Chorfa', lat: 36.1466, lon: 1.3132, sector: 'Public', address: 'Hay El Badr, Chlef' },
+            { name: 'EPH Ain Merane', lat: 36.1589, lon: 0.9622, sector: 'Public', address: 'Ain Merane' },
+            { name: 'EPH Chettia', lat: 36.2047, lon: 1.2611, sector: 'Public', address: 'Chettia' },
+            { name: 'EPH Ténès', lat: 36.5128, lon: 1.3068, sector: 'Public', address: 'Ténès' },
+            { name: 'EHS Ténès', lat: 36.5037, lon: 1.2697, sector: 'Public', address: 'Ténès' },
+            { name: 'Clinique El Hikma', lat: 36.1629, lon: 1.3298, sector: 'Privé', address: 'Cité 184 logement AADL, Chlef' },
+            { name: 'Clinique les orangers', lat: 36.1638, lon: 1.3301, sector: 'Privé', address: 'Bd . Abd El Hamid Ibn Badis, Chlef' },
+            { name: 'Clinique Ennasr', lat: 36.1489, lon: 1.3682, sector: 'Privé', address: 'Cité elnassr, Chlef' },
+            { name: 'Clinique El Ihssene', lat: 36.1700, lon: 1.3416, sector: 'Privé', address: 'Cia des Citronniers, Chlef' }
         ];
-
+       
         // Initialiser la carte
         var map = L.map('map').setView([36.1541, 1.3367], 10);
 
@@ -597,11 +606,6 @@ $tagline = "Au service de votre santé";
                 <span style="color:${markerColor};font-weight:bold;">Secteur ${etablissement.sector}</span><br>
                 <span>${etablissement.address}</span>
             `).openPopup();
-
-            // Mettre à jour et afficher le panneau de coordonnées
-            document.getElementById('location-name').textContent = `${name} (${etablissement.sector})`;
-            document.getElementById('location-address').textContent = `Adresse: ${etablissement.address}`;
-            document.getElementById('coordinates-panel').style.display = 'block';
 
             // Marquer la position comme épinglée
             isLocationPinned = true;
