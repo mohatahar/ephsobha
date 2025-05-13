@@ -646,6 +646,10 @@ require_once 'header.php';
 }
 
 @media (max-width: 768px) {
+    .page-header {
+        padding: 20px;
+    }
+
     .info-card {
         flex-direction: column;
     }
