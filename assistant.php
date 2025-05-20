@@ -60,8 +60,6 @@ require_once 'header.php';
                 
                 <div class="sidebar-section emergency-section">
                     <h3>Services d'urgence</h3>
-                    <p><i class="fas fa-phone-alt"></i> Urgences: <strong>+213 27 71 91 97</strong></p>
-                    <p><i class="fas fa-ambulance"></i> Ambulance: <strong>+213 27 71 91 98</strong></p>
                     <button class="emergency-btn" id="emergencyBtn">
                         <i class="fas fa-exclamation-triangle"></i> Situation d'urgence?
                     </button>
@@ -104,24 +102,7 @@ require_once 'header.php';
                         <li>Saignement abondant incontrôlable</li>
                         <li>Déficit neurologique brutal (paralysie, troubles de la parole)</li>
                         <li>Brûlure grave ou étendue</li>
-                    </ul>
-                    
-                    <div class="emergency-contacts">
-                        <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Urgences hôpital</h4>
-                                <p>+213 27 71 91 97</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-ambulance"></i>
-                            <div>
-                                <h4>Service ambulance</h4>
-                                <p>+213 27 71 91 98</p>
-                            </div>
-                        </div>
-                    </div>                   
+                    </ul>                
                 </div>
             </div>
         </div>
