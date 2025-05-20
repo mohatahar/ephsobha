@@ -739,6 +739,7 @@ $hospital_name = "EPH SOBHA";
         }
 
         @media (max-width: 576px) {
+
             .contact-form,
             .contact-info-card {
                 padding: 30px 20px;
@@ -750,77 +751,82 @@ $hospital_name = "EPH SOBHA";
 <body>
     <!-- Hero Section -->
     <section class="hero-slider" id="accueil">
-    <div class="slide active">
-        <div class="slide-bg" style="background-image: url('img/1.jpg');"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h2>Bienvenue à l'<?php echo $hospital_name; ?></h2>
-            <p>Un établissement public hospitalier au service de la santé des citoyens avec une équipe médicale compétente et dévouée.</p>
-            <a href="#about" class="btn btn-primary">À Propos de Notre Établissement</a>
+        <div class="slide active">
+            <div class="slide-bg" style="background-image: url('img/1.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2>Bienvenue à l'<?php echo $hospital_name; ?></h2>
+                <p>Un établissement public hospitalier au service de la santé des citoyens avec une équipe médicale
+                    compétente et dévouée.</p>
+                <a href="#about" class="btn btn-primary">À Propos de Notre Établissement</a>
+            </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="slide-bg" style="background-image: url('img/2.jpg');"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h2>Équipements et plateaux techniques</h2>
-            <p>Notre établissement est doté d'équipements médicaux permettant d'assurer des soins de qualité conformes aux normes nationales de santé.</p>
-            <a href="#services" class="btn btn-primary">Nos services médicaux</a>
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('img/2.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2>Équipements et plateaux techniques</h2>
+                <p>Notre établissement est doté d'équipements médicaux permettant d'assurer des soins de qualité
+                    conformes aux normes nationales de santé.</p>
+                <a href="#services" class="btn btn-primary">Nos services médicaux</a>
+            </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="slide-bg" style="background-image: url('img/3.jpg');"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h2>Corps médical et paramédical qualifié</h2>
-            <p>Nos médecins spécialistes, médecins généralistes et personnel paramédical travaillent en synergie pour garantir une prise en charge optimale.</p>
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('img/3.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2>Corps médical et paramédical qualifié</h2>
+                <p>Nos médecins spécialistes, médecins généralistes et personnel paramédical travaillent en synergie
+                    pour garantir une prise en charge optimale.</p>
+            </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="slide-bg" style="background-image: url('img/4.jpg');"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h2>Service des urgences 24h/24</h2>
-            <p>Notre service des urgences médicales est opérationnel tous les jours de la semaine pour répondre aux besoins de la population de notre région.</p>
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('img/4.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2>Service des urgences 24h/24</h2>
+                <p>Notre service des urgences médicales est opérationnel tous les jours de la semaine pour répondre aux
+                    besoins de la population de notre région.</p>
+            </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="slide-bg" style="background-image: url('img/5.jpg');"></div>
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h2>Au service de la santé publique</h2>
-            <p>L'EPH s'engage dans la mise en œuvre des programmes nationaux de santé et contribue activement à l'amélioration de la santé de notre communauté.</p>
-            <a href="#contact" class="btn btn-primary">Nous contacter</a>
+        <div class="slide">
+            <div class="slide-bg" style="background-image: url('img/5.jpg');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h2>Au service de la santé publique</h2>
+                <p>L'EPH s'engage dans la mise en œuvre des programmes nationaux de santé et contribue activement à
+                    l'amélioration de la santé de notre communauté.</p>
+                <a href="#contact" class="btn btn-primary">Nous contacter</a>
+            </div>
         </div>
-    </div>
-    
-    <div class="slider-arrows">
-        <div class="arrow prev">
-            <i class="fas fa-chevron-left"></i>
+
+        <div class="slider-arrows">
+            <div class="arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
         </div>
-        <div class="arrow next">
-            <i class="fas fa-chevron-right"></i>
+
+        <div class="slider-controls">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
-    </div>
-    
-    <div class="slider-controls">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-    
-    <div class="slide-counter">
-        <span class="slide-counter-current">1</span>
-        <span class="slide-counter-divider"></span>
-        <span class="slide-counter-total">5</span>
-    </div>
-    
-    <div class="progress-container">
-        <div class="progress-bar"></div>
-    </div>
-</section>
+
+        <div class="slide-counter">
+            <span class="slide-counter-current">1</span>
+            <span class="slide-counter-divider"></span>
+            <span class="slide-counter-total">5</span>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="section highlight-animation" id="about" data-aos="fade-up">
@@ -919,20 +925,20 @@ $hospital_name = "EPH SOBHA";
 
                 <div class="stat-card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="800">
                     <div class="stat-icon">
-                        <i class="fas fa-user-md"></i>
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="stat-number" data-count="45">0</div>
-                    <div class="stat-title">Médecins</div>
-                    <div class="stat-description">Spécialistes qualifiés à votre service</div>
+                    <div class="stat-number" data-count="622">0</div>
+                    <div class="stat-title">Employés</div>
+                    <div class="stat-description">Personnel total de l’établissement</div>
                 </div>
 
                 <div class="stat-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
                     <div class="stat-icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-procedures"></i>
                     </div>
                     <div class="stat-number" data-count="7">0</div>
                     <div class="stat-title">Services</div>
-                    <div class="stat-description">Départements médicaux spécialisés</div>
+                    <div class="stat-description">Nombre de services d'hospitalisation</div>
                 </div>
 
                 <div class="stat-card" data-aos="flip-left" data-aos-delay="600" data-aos-duration="800">
@@ -982,7 +988,8 @@ $hospital_name = "EPH SOBHA";
                     <div class="service-content">
                         <h3>Médecine Interne</h3>
                         <p>Diagnostic et traitement des maladies internes complexes de l'adulte.</p>
-                        <a href="med-interne.php" class="service-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="med-interne.php" class="service-btn">En savoir plus <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -998,7 +1005,8 @@ $hospital_name = "EPH SOBHA";
                     <div class="service-content">
                         <h3>Chirurgie Générale</h3>
                         <p>Interventions chirurgicales par une équipe de chirurgiens hautement qualifiés.</p>
-                        <a href="chirurgie.php" class="service-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="chirurgie.php" class="service-btn">En savoir plus <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -1014,7 +1022,8 @@ $hospital_name = "EPH SOBHA";
                     <div class="service-content">
                         <h3>Pédiatrie</h3>
                         <p>Soins médicaux spécialisés pour les nourrissons, les enfants et les adolescents.</p>
-                        <a href="pediatrie.php" class="service-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="pediatrie.php" class="service-btn">En savoir plus <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -1030,7 +1039,8 @@ $hospital_name = "EPH SOBHA";
                     <div class="service-content">
                         <h3>Maternité</h3>
                         <p>Accompagnement complet de la grossesse à l'accouchement en toute sécurité.</p>
-                        <a href="maternite.php" class="service-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        <a href="maternite.php" class="service-btn">En savoir plus <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 

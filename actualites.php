@@ -17,17 +17,18 @@ $tagline = "Au service de votre santé";
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités - <?php echo $hospital_name; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary-color: #1a73e8;
@@ -58,7 +59,12 @@ $tagline = "Au service de votre santé";
             font-family: 'Poppins', sans-serif;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
         }
@@ -75,7 +81,7 @@ $tagline = "Au service de votre santé";
         }
 
         /* Page Title */
-          .page-title {
+        .page-title {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/actualites.jpeg');
             background-size: cover;
             background-position: center;
@@ -112,6 +118,7 @@ $tagline = "Au service de votre santé";
             height: 50px;
             background: linear-gradient(to bottom right, transparent 49%, white 50%);
         }
+
         .page-content {
             background: white;
             border-radius: 15px;
@@ -149,7 +156,7 @@ $tagline = "Au service de votre santé";
             font-weight: 700;
             font-size: 2.2rem;
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -170,7 +177,7 @@ $tagline = "Au service de votre santé";
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
             transition: all 0.3s ease;
         }
-        
+
         .info-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -183,7 +190,7 @@ $tagline = "Au service de votre santé";
             align-items: center;
             font-size: 1.6rem;
         }
-        
+
         .info-card h3 i {
             margin-right: 15px;
             background-color: var(--primary-color);
@@ -209,11 +216,11 @@ $tagline = "Au service de votre santé";
             overflow: hidden;
             width: 100%;
         }
-        
+
         .fb-page-container iframe {
             width: 100% !important;
         }
-        
+
         .fb-page-container::before {
             content: '';
             position: absolute;
@@ -234,7 +241,7 @@ $tagline = "Au service de votre santé";
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             width: 100%;
         }
-        
+
         .fb-feed iframe {
             width: 100% !important;
         }
@@ -249,7 +256,7 @@ $tagline = "Au service de votre santé";
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .fb-loading i {
             color: var(--primary-color);
             font-size: 2rem;
@@ -257,10 +264,15 @@ $tagline = "Au service de votre santé";
             margin-bottom: 15px;
             animation: spin 1.5s linear infinite;
         }
-        
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .fb-link {
@@ -278,7 +290,7 @@ $tagline = "Au service de votre santé";
             overflow: hidden;
             z-index: 1;
         }
-        
+
         .fb-link::before {
             content: '';
             position: absolute;
@@ -291,16 +303,16 @@ $tagline = "Au service de votre santé";
             z-index: -1;
             transition: opacity 0.5s ease;
         }
-        
+
         .fb-link:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(26, 115, 232, 0.4);
         }
-        
+
         .fb-link:hover::before {
             opacity: 1;
         }
-        
+
         .fb-link i {
             margin-right: 10px;
         }
@@ -315,7 +327,7 @@ $tagline = "Au service de votre santé";
             position: relative;
             overflow: hidden;
         }
-        
+
         .cta-section::before {
             content: '';
             position: absolute;
@@ -326,7 +338,7 @@ $tagline = "Au service de votre santé";
             right: -100px;
             border-radius: 50%;
         }
-        
+
         .cta-section::after {
             content: '';
             position: absolute;
@@ -337,13 +349,13 @@ $tagline = "Au service de votre santé";
             left: -50px;
             border-radius: 50%;
         }
-        
+
         .cta-section h3 {
             color: var(--dark-color);
             margin-bottom: 15px;
             font-size: 1.8rem;
         }
-        
+
         .cta-section p {
             color: var(--gray-800);
             margin-bottom: 20px;
@@ -386,19 +398,21 @@ $tagline = "Au service de votre santé";
         .back-to-top i {
             font-size: 1.8rem;
         }
-        
+
         /* Pulse effect */
         .pulse {
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
             0% {
                 box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.7);
             }
+
             70% {
                 box-shadow: 0 0 0 15px rgba(26, 115, 232, 0);
             }
+
             100% {
                 box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
             }
@@ -409,29 +423,29 @@ $tagline = "Au service de votre santé";
             .page-title h1 {
                 font-size: 3.5rem;
             }
-            
+
             .page-content {
                 padding: 40px 30px;
             }
         }
-        
+
         @media (max-width: 768px) {
             .page-title {
                 padding: 120px 20px 100px;
             }
-            
+
             .page-title h1 {
                 font-size: 3rem;
             }
-            
+
             .page-content {
                 padding: 30px 25px;
             }
-            
+
             .info-card {
                 padding: 25px;
             }
-            
+
             .fb-page-container,
             .fb-feed {
                 padding: 15px;
@@ -446,23 +460,23 @@ $tagline = "Au service de votre santé";
             .page-title h1 {
                 font-size: 2.5rem;
             }
-            
+
             .page-title p {
                 font-size: 1.2rem;
             }
-            
+
             .section-title {
                 font-size: 1.8rem;
             }
-            
+
             .info-card h3 {
                 font-size: 1.4rem;
             }
-            
+
             .cta-section {
                 padding: 30px 20px;
             }
-            
+
             .social-icons a {
                 width: 45px;
                 height: 45px;
@@ -471,21 +485,23 @@ $tagline = "Au service de votre santé";
         }
     </style>
 </head>
+
 <body>
     <!-- Chargement du SDK Facebook -->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v17.0"></script>
-    
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v17.0"></script>
+
     <!-- Script pour forcer la largeur maximale du contenu Facebook -->
     <script>
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Fonction pour ajuster la taille des iframes Facebook
             function resizeFacebookContent() {
                 // Sélectionner tous les iframes générés par Facebook
                 const fbIframes = document.querySelectorAll('.fb-page iframe, .fb-page-container iframe, .fb-feed iframe');
-                
+
                 // Parcourir tous les iframes et ajuster leur largeur
-                fbIframes.forEach(function(iframe) {
+                fbIframes.forEach(function (iframe) {
                     iframe.style.width = '100%';
                     // Si l'iframe a un parent avec une largeur fixe, ajuster également
                     if (iframe.parentElement) {
@@ -496,78 +512,73 @@ $tagline = "Au service de votre santé";
                     }
                 });
             }
-            
+
             // Exécuter immédiatement et périodiquement pour s'assurer que les iframes sont bien ajustés
             resizeFacebookContent();
-            
+
             // Réexécuter après quelques secondes pour les iframes qui se chargent en retard
             setTimeout(resizeFacebookContent, 2000);
             setTimeout(resizeFacebookContent, 5000);
         });
     </script>
-    
+
     <!-- Page Title Section -->
     <section class="page-title" data-aos="fade-down" data-aos-duration="1200">
         <div class="container">
             <h1 data-aos="fade-down" data-aos-duration="1200">Actualités</h1>
-            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Restez informé des dernières nouvelles et événements de l'<?php echo $hospital_name; ?></p>
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Restez informé des dernières nouvelles
+                et événements de l'<?php echo $hospital_name; ?></p>
         </div>
     </section>
-    
+
     <div class="container">
         <div class="page-content">
             <div class="info-card" data-aos="fade-up" data-aos-delay="150">
                 <h3><i class="fas fa-newspaper"></i> Informations et actualités</h3>
-                <p>Sur cette page, vous pouvez consulter toutes les actualités et informations importantes concernant notre établissement hospitalier. Nous publions régulièrement des informations sur nos services, les événements à venir, les campagnes de sensibilisation et d'autres annonces importantes pour nos patients et visiteurs.</p>
+                <p>Sur cette page, vous pouvez consulter toutes les actualités et informations importantes concernant
+                    notre établissement hospitalier. Nous publions régulièrement des informations sur nos services, les
+                    événements à venir, les campagnes de sensibilisation et d'autres annonces importantes pour nos
+                    patients et visiteurs.</p>
             </div>
-            
+
             <!-- Section Facebook -->
             <section class="section" data-aos="fade-up" data-aos-delay="250">
-                <h2 class="section-title">Nos dernières actualités</h2>           
-                
+                <h2 class="section-title">Nos dernières actualités</h2>
+
                 <!-- Widget de la page Facebook -->
                 <div class="fb-page-container" data-aos="zoom-in" data-aos-delay="350">
-                    <div class="fb-page" 
-                         data-tabs="" 
-                         data-width="1100" 
-                         data-height="" 
-                         data-small-header="false" 
-                         data-adapt-container-width="true" 
-                         data-hide-cover="false" 
-                         data-show-facepile="true">
+                    <div class="fb-page" data-tabs="" data-width="1100" data-height="" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                         <blockquote cite="<?php echo $facebook_page_url; ?>" class="fb-xfbml-parse-ignore">
                             <a href="<?php echo $facebook_page_url; ?>"><?php echo $facebook_page_name; ?></a>
                         </blockquote>
                     </div>
-                </div>            
-                
+                </div>
+
                 <!-- Flux de publications -->
                 <div class="fb-feed" data-aos="fade-up" data-aos-delay="450">
                     <div class="fb-loading">
                         <i class="fas fa-circle-notch fa-spin"></i>
                         Chargement des actualités...
                     </div>
-                    <div class="fb-page" 
-                         data-href="<?php echo $facebook_page_url; ?>" 
-                         data-tabs="timeline" 
-                         data-width="1100" 
-                         data-height="800" 
-                         data-small-header="false" 
-                         data-adapt-container-width="true" 
-                         data-hide-cover="false" 
-                         data-show-facepile="false">
+                    <div class="fb-page" data-href="<?php echo $facebook_page_url; ?>" data-tabs="timeline"
+                        data-width="1100" data-height="800" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="false" data-lazy="true"
+                        data-posts-limit="<?php echo $max_posts; ?>">
                         <blockquote cite="<?php echo $facebook_page_url; ?>" class="fb-xfbml-parse-ignore">
                             <a href="<?php echo $facebook_page_url; ?>"><?php echo $facebook_page_name; ?></a>
                         </blockquote>
                     </div>
                 </div>
             </section>
-            
+
             <div class="cta-section" data-aos="zoom-in" data-aos-delay="550">
                 <h3>Suivez-nous sur les réseaux sociaux</h3>
-                <p>Pour ne manquer aucune actualité, suivez-nous sur nos réseaux sociaux officiels et restez connecté avec nos services et annonces importantes.</p>
-                               
-                <a href="<?php echo $facebook_page_url; ?>" target="_blank" class="fb-link pulse" data-aos="fade-up" data-aos-delay="650">
+                <p>Pour ne manquer aucune actualité, suivez-nous sur nos réseaux sociaux officiels et restez connecté
+                    avec nos services et annonces importantes.</p>
+
+                <a href="<?php echo $facebook_page_url; ?>" target="_blank" class="fb-link pulse" data-aos="fade-up"
+                    data-aos-delay="650">
                     <i class="fab fa-facebook-f"></i> Visitez notre page Facebook
                 </a>
             </div>
@@ -609,29 +620,28 @@ $tagline = "Au service de votre santé";
         });
 
         // Masquer le message de chargement une fois que le contenu est chargé
-        window.fbAsyncInit = function() {
-            FB.Event.subscribe('xfbml.render', function() {
-                setTimeout(function() {
+        window.fbAsyncInit = function () {
+            FB.Event.subscribe('xfbml.render', function () {
+                setTimeout(function () {
                     const loadingElement = document.querySelector('.fb-loading');
                     if (loadingElement) {
                         loadingElement.style.display = 'none';
                     }
-                    
+
                     // Force les iframes Facebook à prendre toute la largeur
                     const fbIframes = document.querySelectorAll('.fb-page iframe, .fb-page-container iframe, .fb-feed iframe');
-                    fbIframes.forEach(function(iframe) {
+                    fbIframes.forEach(function (iframe) {
                         iframe.style.width = '100%';
                         if (iframe.parentElement) {
                             iframe.parentElement.style.width = '100%';
                         }
                     });
-                    
+
                 }, 1000); // Petit délai pour garantir que le contenu est bien chargé
             });
         };
     </script>
 
-    <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         // Initialisation de AOS avec des options améliorées
@@ -646,6 +656,7 @@ $tagline = "Au service de votre santé";
         });
     </script>
 </body>
+
 </html>
 
 <?php include('footer.php'); ?>
