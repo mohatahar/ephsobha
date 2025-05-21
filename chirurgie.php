@@ -415,7 +415,7 @@ $tagline = "Au service de votre santé";
                     <div class="service-item" data-aos="fade-up" data-aos-delay="250">
                         <i class="fas fa-syringe"></i>
                         <h4>Chirurgie mini-invasive</h4>
-                        <p>Interventions par cœlioscopie et techniques mini-invasives pour réduire les cicatrices et accélérer la récupération</p>
+                        <p>Interventions par techniques mini-invasives pour réduire les cicatrices et accélérer la récupération</p>
                     </div>
                 </div>
             </section>

@@ -1086,7 +1086,7 @@ $hospital_name = "EPH SOBHA";
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3>Radiologie</h3>
+                        <h3>Unité de Radiologie</h3>
                         <p>Équipements d'imagerie médicale modernes pour un diagnostic précis.</p>
                         <a href="radio.php" class="service-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
                     </div>

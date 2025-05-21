@@ -618,8 +618,8 @@ $tagline = "Au service de votre santé";
                     </div>
                     <div class="service-content">
                         <i class="fas fa-x-ray"></i>
-                        <h3>Radiologie</h3>
-                        <p>Service d'imagerie médicale équipé pour fournir un diagnostic fiable grâce à des technologies adaptées.</p>
+                        <h3>Unité de Radiologie</h3>
+                        <p>Unité d'imagerie médicale équipée pour fournir un diagnostic fiable grâce à des technologies adaptées.</p>
                         <ul class="service-details">
                             <li>Radiographie conventionnelle</li>
                             <li>Échographie</li>

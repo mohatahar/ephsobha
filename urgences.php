@@ -351,7 +351,7 @@ $tagline = "Au service de votre santé";
             <section class="emergency-hours" data-aos="fade-up" data-aos-delay="200">
                 <h3><i class="far fa-clock"></i> Disponibilité</h3>
                 <p><strong>Horaires :</strong> Notre service des urgences est ouvert 24h/24 et 7j/7, y compris les jours fériés.</p>
-                <p><strong>Équipe médicale :</strong> Une équipe complète composée de médecins urgentistes, d'infirmiers spécialisés et d'aides-soignants est présente en permanence pour assurer une prise en charge optimale.</p>
+                <p><strong>Équipe médicale :</strong> Une équipe complète composée de médecins généralistes, d'infirmiers spécialisés et d'aides-soignants est présente en permanence pour assurer une prise en charge optimale.</p>
             </section>
 
             <section data-aos="fade-up" data-aos-delay="300">
@@ -374,7 +374,7 @@ $tagline = "Au service de votre santé";
                     <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-stethoscope"></i>
                         <h4>Examens complémentaires</h4>
-                        <p>Radiologie, échographie, analyses biologiques disponibles en urgence</p>
+                        <p>Radiologie, analyses biologiques disponibles en urgence</p>
                     </div>
                     
                     <div class="service-item" data-aos="fade-up" data-aos-delay="250">
@@ -390,7 +390,7 @@ $tagline = "Au service de votre santé";
                 <ol class="guidelines-list">
                     <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-1"></i> <strong>Accueil et enregistrement</strong> : Prise en charge administrative rapide</li>
                     <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-2"></i> <strong>Triage</strong> : Évaluation de la gravité par un médecin de tri pour déterminer la priorité de prise en charge</li>
-                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-3"></i> <strong>Consultation médicale</strong> : Examen par un médecin urgentiste</li>
+                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-3"></i> <strong>Consultation médicale</strong> : Examen par un médecin généraliste</li>
                     <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-4"></i> <strong>Examens complémentaires</strong> : Si nécessaires (analyses, radiologie, etc.)</li>
                     <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-5"></i> <strong>Soins et traitement</strong> : Administration des soins adaptés</li>
                     <li data-aos="fade-left" data-aos-delay="350"><i class="fas fa-6"></i> <strong>Orientation</strong> : Retour à domicile, hospitalisation ou transfert selon l'état du patient</li>

@@ -11,7 +11,7 @@ $tagline = "Au service de votre santé";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service de Radiologie Conventionnelle - <?php echo $hospital_name; ?></title>
+    <title>Unité de Radiologie - <?php echo $hospital_name; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -413,7 +413,7 @@ $tagline = "Au service de votre santé";
     <!-- Page Title Section -->
     <section class="page-title" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
-            <h1 data-aos="fade-down" data-aos-duration="1000">Service de Radiologie</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1000">Unité de Radiologie</h1>
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Des examens radiologiques standards de qualité pour un diagnostic précis à l'EPH SOBHA</p>
         </div>
     </section>
@@ -422,8 +422,8 @@ $tagline = "Au service de votre santé";
     <div class="container">
         <div class="page-content">
             <div class="info-card" data-aos="fade-up" data-aos-delay="100">
-                <h3>Service de Radiologie</h3>
-                <p>Le service de radiologie de l'EPH SOBHA est équipé d'appareils numériques modernes permettant de réaliser des clichés de haute qualité. Notre équipe de techniciens expérimentés assure des examens précis et rapides, essentiels au diagnostic et à la prise en charge thérapeutique des patients.</p>
+                <h3>Unité de Radiologie</h3>
+                <p>L'unité de radiologie de l'EPH SOBHA est équipée d'appareils numériques permettant de réaliser des clichés de haute qualité. Notre équipe de techniciens expérimentés assure des examens précis et rapides, essentiels au diagnostic et à la prise en charge thérapeutique des patients.</p>
             </div>
 
             <div class="service-icon" data-aos="zoom-in" data-aos-delay="200">
@@ -438,7 +438,7 @@ $tagline = "Au service de votre santé";
 
             <section data-aos="fade-up" data-aos-delay="300">
                 <h2 class="section-title">Notre équipement</h2>
-                <p>Le service de radiologie de l'EPH SOBHA dispose d'équipements numériques récents permettant d'obtenir des images de haute définition tout en minimisant l'exposition aux rayonnements :</p>
+                <p>L'unité de radiologie de l'EPH SOBHA dispose d'équipements numériques permettant d'obtenir des images de haute définition tout en minimisant l'exposition aux rayonnements :</p>
                 
                 <div class="service-list">
                     <div class="service-item" data-aos="fade-up" data-aos-delay="100">
@@ -520,7 +520,7 @@ $tagline = "Au service de votre santé";
             <section data-aos="fade-up" data-aos-delay="400">
                 <h2 class="section-title">Notre équipe</h2>
                 
-                <p>Le service de radiologie est composé de professionnels qualifiés :</p>
+                <p>L'unité de radiologie est composée de professionnels qualifiés :</p>
                 
                 <ul class="guidelines-list">
                     <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-user-nurse"></i> <strong>Manipulateurs en radiologie</strong> : Techniciens formés à la réalisation des examens radiologiques</li>
@@ -568,7 +568,7 @@ $tagline = "Au service de votre santé";
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Les examens de radiologie conventionnelle utilisent des radiations ionisantes à doses contrôlées et sont prescrits uniquement lorsque le bénéfice attendu est supérieur au risque potentiel. Notre service applique le principe ALARA (As Low As Reasonably Achievable) pour minimiser l'exposition aux rayonnements tout en garantissant des images de qualité diagnostique.</p>
+                        <p>Les examens de radiologie conventionnelle utilisent des radiations ionisantes à doses contrôlées et sont prescrits uniquement lorsque le bénéfice attendu est supérieur au risque potentiel. Notre unité applique le principe ALARA (As Low As Reasonably Achievable) pour minimiser l'exposition aux rayonnements tout en garantissant des images de qualité diagnostique.</p>
                     </div>
                 </div>
                 
@@ -584,18 +584,17 @@ $tagline = "Au service de votre santé";
             </section>
 
             <section class="radiology-card" data-aos="fade-up" data-aos-delay="300">
-                <h3><i class="fas fa-info-circle"></i> Parcours patient en radiologie conventionnelle</h3>
+                <h3><i class="fas fa-info-circle"></i> Parcours patient en radiologie</h3>
                 <ol class="guidelines-list">
                     <li data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-1"></i> <strong>Prise de rendez-vous</strong> : Sur prescription médicale</li>
                     <li data-aos="zoom-in" data-aos-delay="150"><i class="fas fa-2"></i> <strong>Accueil et enregistrement</strong> : Vérification des documents administratifs et médicaux</li>
                     <li data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-3"></i> <strong>Réalisation de l'examen</strong> : Par un manipulateur en radiologie</li>
-                    <li data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-4"></i> <strong>Interprétation</strong> : Analyse des images par un médecin radiologue</li>
-                    <li data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-5"></i> <strong>Remise des résultats</strong> : Les résultats transmis directement dans le dossier électronique du patient (DEM).</li>
+                    <li data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-4"></i> <strong>Remise des résultats</strong> : Les résultats transmis directement dans le dossier électronique du patient (DEM).</li>
                 </ol>
             </section>
             
             <div class="cta-section" data-aos="zoom-in" data-aos-delay="100">
-                <p class="mt-3">Pour toute autre question concernant notre service de radiologie :</p>
+                <p class="mt-3">Pour toute autre question concernant notre unité de radiologie :</p>
                 <a href="index.php#contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="250">Contactez-nous</a>
             </div>
         </div>
