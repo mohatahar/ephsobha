@@ -53,7 +53,7 @@
                 <p>&copy; <?php echo date('Y'); ?> <?php echo $hospital_name; ?>. Tous droits réservés.</p>
             </div>
             <div class="developer-info">
-                <p>Conception & Développement: <a href="https://tahar-djebbar.onrender.com" target="_blank"
+                <p>Conception & Développement: <a href="https://tahardjebbar.onrender.com" target="_blank"
                         rel="noopener">TAHAR-DJEBBAR MOHAMED <i class="fas fa-code"></i></a></p>
             </div>
         </div>
