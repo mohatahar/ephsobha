@@ -238,7 +238,7 @@ $tagline = "Au service de votre santé";
                 <div class="privacy-section" data-aos="fade-up" data-aos-duration="800">
                     <h3>Modifications de notre politique de confidentialité</h3>
                     <p>Nous pouvons modifier cette politique de confidentialité de temps à autre. La date de la dernière
-                        mise à jour sera indiquée en haut de cette page. Nous vous encourageons à consulter
+                        mise à jour sera indiquée en bas de cette page. Nous vous encourageons à consulter
                         régulièrement cette politique pour rester informé de la façon dont nous protégeons vos
                         informations.</p>
                 </div>

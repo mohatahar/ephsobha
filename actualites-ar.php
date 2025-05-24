@@ -1,7 +1,7 @@
 <?php
 /**
  * Script qui affiche les actualités de la page Facebook "ephsobha.sante"
- * en utilisant les plugins sociaux Facebook
+ * en utilisant les plugins sociaux Facebook - Version Arabe
  */
 
 // Configuration
@@ -9,38 +9,39 @@ $facebook_page_url = "https://www.facebook.com/ephsobha.sante";
 $facebook_page_name = "EPH SOBHA Santé";
 $max_posts = 10; // Nombre maximum de publications à afficher
 
-include('header.php');
-// Configuration de base similaire à visite.php
-$hospital_name = "EPH SOBHA";
-$tagline = "Au service de votre santé";
+include('header-ar.php');
+$hospital_name = "المؤسسة العمومية الإستشفائية الصبحة";
+$tagline = "في خدمة صحتكم";
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités - <?php echo $hospital_name; ?></title>
+    <title>الأخبار - <?php echo $hospital_name; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Cairo', 'Amiri', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
             background-color: #f5f5f5;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.8;
+            direction: rtl;
+            text-align: right;
         }
 
         .container {
@@ -48,6 +49,20 @@ $tagline = "Au service de votre santé";
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Amiri', serif;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.05rem;
         }
 
         /* Page Title */
@@ -105,12 +120,12 @@ $tagline = "Au service de votre santé";
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             width: 8px;
             height: 100%;
             background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
 
         .section {
@@ -131,7 +146,7 @@ $tagline = "Au service de votre santé";
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 60px;
             height: 4px;
             background: var(--accent-color);
@@ -140,7 +155,7 @@ $tagline = "Au service de votre santé";
 
         .info-card {
             background-color: rgba(26, 115, 232, 0.03);
-            border-left: 5px solid var(--primary-color);
+            border-right: 5px solid var(--primary-color);
             padding: 30px;
             margin-bottom: 40px;
             border-radius: 10px;
@@ -162,7 +177,7 @@ $tagline = "Au service de votre santé";
         }
 
         .info-card h3 i {
-            margin-right: 15px;
+            margin-left: 15px;
             background-color: var(--primary-color);
             color: white;
             width: 40px;
@@ -284,7 +299,7 @@ $tagline = "Au service de votre santé";
         }
 
         .fb-link i {
-            margin-right: 10px;
+            margin-left: 10px;
         }
 
         .cta-section {
@@ -305,7 +320,7 @@ $tagline = "Au service de votre santé";
             height: 300px;
             background: radial-gradient(circle, rgba(79, 195, 247, 0.1) 0%, transparent 70%);
             top: -100px;
-            right: -100px;
+            left: -100px;
             border-radius: 50%;
         }
 
@@ -316,7 +331,7 @@ $tagline = "Au service de votre santé";
             height: 200px;
             background: radial-gradient(circle, rgba(26, 115, 232, 0.1) 0%, transparent 70%);
             bottom: -100px;
-            left: -50px;
+            right: -50px;
             border-radius: 50%;
         }
 
@@ -338,7 +353,7 @@ $tagline = "Au service de votre santé";
         .back-to-top {
             position: fixed;
             bottom: 25px;
-            right: 25px;
+            left: 25px;
             background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
             color: white;
             width: 60px;
@@ -453,6 +468,19 @@ $tagline = "Au service de votre santé";
                 font-size: 1.3rem;
             }
         }
+
+        /* RTL specific adjustments */
+        .fb-page-container,
+        .fb-feed {
+            direction: ltr;
+        }
+
+        /* Ensure Arabic text flows properly */
+        .arabic-text {
+            font-family: 'Cairo', 'Noto Sans Arabic', sans-serif;
+            line-height: 1.8;
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -460,7 +488,7 @@ $tagline = "Au service de votre santé";
     <!-- Chargement du SDK Facebook -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v17.0"></script>
+        src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v17.0"></script>
 
     <!-- Script pour forcer la largeur maximale du contenu Facebook -->
     <script>
@@ -495,25 +523,24 @@ $tagline = "Au service de votre santé";
     <!-- Page Title Section -->
     <section class="page-title" data-aos="fade-down" data-aos-duration="1200">
         <div class="container">
-            <h1 data-aos="fade-down" data-aos-duration="1200">Actualités</h1>
-            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Restez informé des dernières nouvelles
-                et événements de l'<?php echo $hospital_name; ?></p>
+            <h1 data-aos="fade-down" data-aos-duration="1200">الأخبار والمستجدات</h1>
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" class="arabic-text">ابقوا على اطلاع بآخر
+                الأخبار والأحداث في <?php echo $hospital_name; ?></p>
         </div>
     </section>
 
     <div class="container">
         <div class="page-content">
             <div class="info-card" data-aos="fade-up" data-aos-delay="150">
-                <h3><i class="fas fa-newspaper"></i> Informations et actualités</h3>
-                <p>Sur cette page, vous pouvez consulter toutes les actualités et informations importantes concernant
-                    notre établissement hospitalier. Nous publions régulièrement des informations sur nos services, les
-                    événements à venir, les campagnes de sensibilisation et d'autres annonces importantes pour nos
-                    patients et visiteurs.</p>
+                <h3><i class="fas fa-newspaper"></i> المعلومات والأخبار</h3>
+                <p class="arabic-text">في هذه الصفحة، يمكنكم الاطلاع على جميع الأخبار والمعلومات المهمة المتعلقة
+                    بمؤسستنا الاستشفائية. ننشر بانتظام معلومات حول خدماتنا، والفعاليات القادمة، وحملات التوعية، وإعلانات
+                    أخرى مهمة لمرضانا وزوارنا.</p>
             </div>
 
             <!-- Section Facebook -->
             <section class="section" data-aos="fade-up" data-aos-delay="250">
-                <h2 class="section-title">Nos dernières actualités</h2>
+                <h2 class="section-title">آخر أخبارنا</h2>
 
                 <!-- Widget de la page Facebook -->
                 <div class="fb-page-container" data-aos="zoom-in" data-aos-delay="350">
@@ -529,7 +556,7 @@ $tagline = "Au service de votre santé";
                 <div class="fb-feed" data-aos="fade-up" data-aos-delay="450">
                     <div class="fb-loading">
                         <i class="fas fa-circle-notch fa-spin"></i>
-                        Chargement des actualités...
+                        <span class="arabic-text">جاري تحميل الأخبار...</span>
                     </div>
                     <div class="fb-page" data-href="<?php echo $facebook_page_url; ?>" data-tabs="timeline"
                         data-width="1100" data-height="800" data-small-header="false" data-adapt-container-width="true"
@@ -543,13 +570,13 @@ $tagline = "Au service de votre santé";
             </section>
 
             <div class="cta-section" data-aos="zoom-in" data-aos-delay="550">
-                <h3>Suivez-nous sur les réseaux sociaux</h3>
-                <p>Pour ne manquer aucune actualité, suivez-nous sur nos réseaux sociaux officiels et restez connecté
-                    avec nos services et annonces importantes.</p>
+                <h3>تابعونا على وسائل التواصل الاجتماعي</h3>
+                <p class="arabic-text">لكي لا تفوتكم أي أخبار، تابعونا على حساباتنا الرسمية على وسائل التواصل الاجتماعي
+                    وابقوا على تواصل مع خدماتنا وإعلاناتنا المهمة.</p>
 
                 <a href="<?php echo $facebook_page_url; ?>" target="_blank" class="fb-link pulse" data-aos="fade-up"
                     data-aos-delay="650">
-                    <i class="fab fa-facebook-f"></i> Visitez notre page Facebook
+                    <i class="fab fa-facebook-f"></i> زوروا صفحتنا على فيسبوك
                 </a>
             </div>
         </div>
@@ -629,4 +656,4 @@ $tagline = "Au service de votre santé";
 
 </html>
 
-<?php include('footer.php'); ?>
+<?php include('footer-ar.php'); ?>

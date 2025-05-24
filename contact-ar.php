@@ -1,34 +1,40 @@
 <?php
-include('header.php');
-$hospital_name = "EPH SOBHA";
-$tagline = "Au service de votre santé";
+include('header-ar.php');
+// Configuration de base
+$hospital_name = "المؤسسة العمومية الاستشفائية الصبحة";
+$tagline = "في خدمة صحتكم";
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - <?php echo $hospital_name; ?></title>
+    <title>اتصل بنا - <?php echo $hospital_name; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
             color: #333;
             overflow-x: hidden;
+            direction: rtl;
+            text-align: right;
+        }
+
+         * {
+            font-family: 'Cairo', 'Amiri', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         /* Page Title */
         .page-title {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/contact.jpg');
-            background-size: cover;
+           background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: white;
@@ -45,6 +51,7 @@ $tagline = "Au service de votre santé";
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-family: 'Amiri', serif;
         }
 
         .page-title p {
@@ -66,7 +73,7 @@ $tagline = "Au service de votre santé";
 
         /* Section Styling */
         .section {
-            padding: 0px 0;
+            padding: 60px 0;
             position: relative;
             overflow: hidden;
         }
@@ -174,11 +181,11 @@ $tagline = "Au service de votre santé";
             content: '';
             position: absolute;
             top: 0;
-            left: -100%;
+            right: -100%;
             width: 100%;
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.7s ease;
+            transition: right 0.7s ease;
             z-index: -1;
         }
 
@@ -188,7 +195,7 @@ $tagline = "Au service de votre santé";
         }
 
         .transport-option:hover::before {
-            left: 100%;
+            right: 100%;
         }
 
         .transport-option i {
@@ -265,16 +272,16 @@ $tagline = "Au service de votre santé";
             content: '';
             position: absolute;
             top: 0;
-            left: -100%;
+            right: -100%;
             width: 100%;
             height: 100%;
             background: rgba(255, 255, 255, 0.2);
-            transition: left 0.5s ease;
+            transition: right 0.5s ease;
             z-index: -1;
         }
 
         .cta-section .btn:hover::before {
-            left: 100%;
+            right: 100%;
         }
 
         /* Contact Form Animation */
@@ -307,13 +314,13 @@ $tagline = "Au service de votre santé";
         }
 
         .contact-info-item:hover {
-            transform: translateX(10px);
+            transform: translateX(-10px);
         }
 
         .contact-info-item i {
             font-size: 1.8rem;
             color: #4caf50;
-            margin-right: 15px;
+            margin-left: 15px;
             margin-top: 5px;
         }
 
@@ -336,6 +343,8 @@ $tagline = "Au service de votre santé";
             border-radius: 5px;
             font-size: 1rem;
             transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+            text-align: right;
         }
 
         .form-control:focus {
@@ -361,6 +370,7 @@ $tagline = "Au service de votre santé";
             transition: all 0.3s ease;
             text-decoration: none;
             font-weight: 500;
+            font-family: 'Cairo', sans-serif;
         }
 
         .btn:hover {
@@ -370,7 +380,7 @@ $tagline = "Au service de votre santé";
         }
 
         .btn i {
-            margin-left: 8px;
+            margin-right: 8px;
         }
 
         /* Animation pour l'apparition des éléments */
@@ -434,7 +444,7 @@ $tagline = "Au service de votre santé";
         .back-to-top {
             position: fixed;
             bottom: 30px;
-            right: 30px;
+            left: 30px;
             width: 50px;
             height: 50px;
             background-color: #4caf50;
@@ -462,6 +472,30 @@ $tagline = "Au service de votre santé";
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
         }
+
+        /* RTL adjustments */
+        .fa-arrow-right::before {
+            content: "\f060"; /* left arrow icon for RTL */
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+                /* Adjustments for Arabic text */
+        h1, h2, h3 {
+            font-family: 'Amiri', serif;
+        }
+
+        p, li, span {
+            font-family: 'Cairo', sans-serif;
+        }
     </style>
 </head>
 
@@ -469,9 +503,8 @@ $tagline = "Au service de votre santé";
     <!-- Page Title Section -->
     <section class="page-title" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
-            <h1 data-aos="fade-down" data-aos-duration="1000">Contactez-Nous</h1>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Nous sommes à votre écoute pour répondre
-                à vos questions et vous accompagner dans vos démarches</p>
+            <h1 data-aos="fade-down" data-aos-duration="1000">اتصل بنا</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">نحن في خدمتكم للإجابة على استفساراتكم ومرافقتكم في إجراءاتكم الطبية</p>
         </div>
     </section>
 
@@ -479,72 +512,69 @@ $tagline = "Au service de votre santé";
     <section class="section" id="contact">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Nous Contacter</h2>
-                <p>N'hésitez pas à nous contacter pour toute question ou pour prendre rendez-vous</p>
+                <h2>تواصل معنا</h2>
+                <p>لا تترددوا في الاتصال بنا لأي استفسار أو لحجز موعد</p>
             </div>
             <div class="contact-form-container">
                 <div class="contact-info-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                    <h3>Informations de Contact</h3>
+                    <h3>معلومات الاتصال</h3>
                     <div class="contact-info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Adresse</h4>
-                            <p>Commune de Sobha, Wilaya de Chlef, Algérie</p>
+                            <h4>العنوان</h4>
+                            <p>بلدية الصبحة، ولاية الشلف، الجزائر</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Téléphone</h4>
-                            <p>Standard: +213 27 71 91 97</p>
+                            <h4>الهاتف</h4>
+                            <p> 97 91 71 27 213+</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4>البريد الإلكتروني</h4>
                             <p>contact.ephsobha@gmail.com</p>
-                            <p>rdv.ephsobha@gmail.com (Pour les rendez-vous)</p>
+                            <p>rdv.ephsobha@gmail.com (للمواعيد)</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Heures d'ouverture</h4>
-                            <p>Administration: Dim-Jeu, 8h-16h30</p>
-                            <p>Urgences: 24h/24, 7j/7</p>
+                            <h4>أوقات العمل</h4>
+                            <p>الإدارة: الأحد-الخميس، 08:00-16:30</p>
+                            <p>الإستعجالات: 24 ساعة، 7 أيام</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <h3>Envoyez-nous un message</h3>
-                    <form action="process_contact.php" method="POST">
+                    <h3>أرسل لنا رسالة</h3>
+                    <form action="process_contact-ar.php" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Votre nom complet"
-                                required>
+                            <input type="text" class="form-control" name="name" placeholder="الاسم الكامل" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Votre email" required>
+                            <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" name="phone" placeholder="Votre numéro de téléphone">
+                            <input type="tel" class="form-control" name="phone" placeholder="رقم الهاتف">
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="subject" required>
-                                <option value="" selected disabled>Sélectionnez un service</option>
-                                <option value="Info">Demande d'information</option>
-                                <option value="Reclamation">Réclamation</option>
-                                <option value="Autre">Autre</option>
+                                <option value="" selected disabled>اختر الخدمة</option>
+                                <option value="Info">طلب معلومات</option>
+                                <option value="Reclamation">شكوى</option>
+                                <option value="Autre">أخرى</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Votre message"
-                                required></textarea>
+                            <textarea class="form-control" name="message" placeholder="رسالتك" required></textarea>
                         </div>
                         <!-- Token CSRF pour la sécurité -->
                         <input type="hidden" name="csrf_token" value="<?php echo md5(uniqid(mt_rand(), true)); ?>">
-                        <button type="submit" class="btn btn-primary">Envoyer <i
-                                class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary">إرسال <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -555,15 +585,15 @@ $tagline = "Au service de votre santé";
     <section class="section bg-light" id="map-section">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Notre Localisation</h2>
-                <p>Trouvez facilement votre chemin jusqu'à notre établissement</p>
+                <h2>موقعنا</h2>
+                <p>اعثر بسهولة على طريقك إلى مؤسستنا</p>
             </div>
             <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
                 <div id="map"></div>
             </div>
             <div class="map-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <p><strong>Adresse:</strong> Commune de Sobha, Wilaya de Chlef, Algérie</p>
-                <p><strong>Coordonnées GPS:</strong> 36.10538, 1.10444</p>
+                <p><strong>العنوان:</strong> بلدية الصبحة، ولاية الشلف، الجزائر</p>
+                <p><strong>الإحداثيات:</strong> 36.10538, 1.10444</p>
             </div>
         </div>
     </section>
@@ -572,27 +602,24 @@ $tagline = "Au service de votre santé";
     <section class="section">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Comment Nous Rejoindre</h2>
-                <p>Plusieurs options s'offrent à vous pour accéder à notre établissement</p>
+                <h2>كيفية الوصول إلينا</h2>
+                <p>عدة خيارات متاحة للوصول إلى مؤسستنا</p>
             </div>
             <div class="transport-container">
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <i class="fas fa-car"></i>
-                    <h3>En voiture</h3>
-                    <p>Accès facile depuis la Route CW73. Suivez les panneaux vers Sobha, puis les indications
-                        "Hôpital" ou "EPH". Un parking gratuit est disponible pour les patients et
-                        visiteurs.</p>
+                    <h3>بالسيارة</h3>
+                    <p>وصول سهل من الطريق الولائي رقم 73. اتبع اللافتات نحو الصبحة، ثم الإشارات "المستشفى" أو "المؤسسة الاستشفائية العمومية". موقف مجاني متاح للمرضى والزوار.</p>
                 </div>
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <i class="fas fa-bus"></i>
-                    <h3>En transport en commun</h3>
-                    <p>Plusieurs lignes de bus desservent la commune de Sobha depuis le centre-ville de Chlef ou la commune de Boukadir. Arrêt "Hôpital Sobha" à 100m de l'entrée principale.</p>
+                    <h3>بوسائل النقل العمومي</h3>
+                    <p>عدة خطوط حافلات تخدم بلدية الصبحة من وسط مدينة الشلف أو من بلدية بوقادير. محطة "مستشفى الصبحة" على بعد 100 متر من المدخل الرئيسي.</p>
                 </div>
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <i class="fas fa-taxi"></i>
-                    <h3>En taxi</h3>
-                    <p>Service de taxi disponible depuis toutes les grandes villes environnantes. Tarif approximatif
-                        depuis la commune de Boukadir : 25 DA. Une arrêt de taxis est disponible devant l'hôpital.</p>
+                    <h3>بسيارة الأجرة</h3>
+                    <p>خدمة سيارات الأجرة متاحة من جميع المدن الكبرى المحيطة. التعريفة التقريبية من بلدية بوقادير: 25 دج. موقف سيارات أجرة متاحة أمام المستشفى.</p>
                 </div>
             </div>
         </div>
@@ -601,11 +628,9 @@ $tagline = "Au service de votre santé";
     <!-- Call to Action -->
     <section class="cta-section" data-aos="fade" data-aos-duration="1200">
         <div class="container">
-            <h2 data-aos="fade-up" data-aos-duration="800">Besoin d'une assistance médicale urgente ?</h2>
-            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Notre service d'urgence est disponible
-                24h/24 et 7j/7 pour vous accueillir et vous prodiguer les soins nécessaires.</p>
-            <a href="services.php" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800"
-                data-aos-delay="400">Découvrir nos services <i class="fas fa-arrow-right"></i></a>
+            <h2 data-aos="fade-up" data-aos-duration="800">هل تحتاج إلى مساعدة طبية عاجلة؟</h2>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">خدمة الإستعجالات لدينا متاحة 24 ساعة و 7 أيام في الأسبوع لاستقبالكم وتقديم الرعاية اللازمة.</p>
+            <a href="services-ar.php" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">اكتشف خدماتنا <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
@@ -613,6 +638,7 @@ $tagline = "Au service de votre santé";
     <div id="back-to-top" class="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </div>
+
     <script>
         // Script pour le bouton de retour en haut
         document.addEventListener('DOMContentLoaded', function () {
@@ -642,6 +668,7 @@ $tagline = "Au service de votre santé";
             toggleBackToTopButton();
         });
     </script>
+
     <!-- Script AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -683,7 +710,7 @@ $tagline = "Au service de votre santé";
             var marker = L.marker([latitude, longitude]).addTo(map);
 
             // Ajouter une popup au marqueur
-            marker.bindPopup("<b>EPH SOBHA</b><br>Établissement Public Hospitalier").openPopup();
+            marker.bindPopup("<b>المؤسسة العمومية الاستشفائية الصبحة</b><br>").openPopup();
 
             // Ajouter un cercle pour indiquer la zone de l'hôpital
             var circle = L.circle([latitude, longitude], {
@@ -711,4 +738,4 @@ $tagline = "Au service de votre santé";
 
 </html>
 
-<?php include('footer.php'); ?>
+<?php include('footer-ar.php'); ?>

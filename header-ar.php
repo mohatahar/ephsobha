@@ -1,30 +1,32 @@
 <?php
 require_once 'auth_check.php';
-$hospital_name = "EPH SOBHA";
+$hospital_name = "مستشفى الصبحة";
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $hospital_name; ?> - Établissement Public Hospitalier</title>
+    <title><?php echo $hospital_name; ?> - المؤسسة العمومية الإستشفائية الصبحة</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- الرأسية -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.php">
-                        <img src="img/logo1.png?v=<?php echo time(); ?>" alt="Logo de l'hôpital" class="logo-img">
+                    <a href="index-ar.php">
+                        <img src="img/logo1.png?v=<?php echo time(); ?>" alt="شعار المستشفى" class="logo-img">
                     </a>
                     <div class="logo-text">
                         <h1><?php echo $hospital_name; ?></h1>
@@ -44,55 +46,58 @@ $hospital_name = "EPH SOBHA";
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- التنقل -->
     <nav>
         <div class="container">
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
-            
+
             <!-- Language switcher for mobile - positioned where the red circle is -->
             <div class="language-switcher mobile-lang-switcher">
-                <button class="lang-btn" onclick="switchLanguage('ar')">
-                    <i class="fas fa-globe"></i> عربي
+                <button class="lang-btn" onclick="switchLanguage('fr')">
+                    <i class="fas fa-globe"></i> Français
                 </button>
             </div>
-            
+
             <?php
-            // Récupérer le nom du fichier courant
+            // الحصول على اسم الملف الحالي
             $current_page = basename($_SERVER['PHP_SELF']);
             ?>
             <ul class="nav-menu">
-                <li><a href="index.php"
-                        class="<?php echo ($current_page == 'index.php') ? 'active' : ''; ?>">Accueil</a></li>
-                <li><a href="actualites.php"
-                        class="<?php echo ($current_page == 'actualites.php') ? 'active' : ''; ?>">Actualités</a></li>
-                <li><a href="services.php" class="<?php echo ($current_page == 'services.php') ? 'active' : ''; ?>">Nos
-                        Services</a></li>
-                <li><a href="about.php" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">À
-                        Propos</a></li>
-                <li><a href="charte.php" class="<?php echo ($current_page == 'charte.php') ? 'active' : ''; ?>">Charte
-                        du Patient</a></li>
-                <li><a href="recrutement.php"
-                        class="<?php echo ($current_page == 'recrutement.php') ? 'active' : ''; ?>">Recrutement</a></li>
-                <li><a href="contact.php"
-                        class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
+                <li><a href="index-ar.php"
+                        class="<?php echo ($current_page == 'index-ar.php') ? 'active' : ''; ?>">الرئيسية</a></li>
+                <li><a href="actualites-ar.php"
+                        class="<?php echo ($current_page == 'actualites-ar.php') ? 'active' : ''; ?>">الأخبار</a></li>
+                <li><a href="services-ar.php"
+                        class="<?php echo ($current_page == 'services-ar.php') ? 'active' : ''; ?>">خدماتنا</a></li>
+                <li><a href="about-ar.php" class="<?php echo ($current_page == 'about-ar.php') ? 'active' : ''; ?>">من
+                        نحن</a>
+                </li>
+                <li><a href="charte-ar.php"
+                        class="<?php echo ($current_page == 'charte-ar.php') ? 'active' : ''; ?>">ميثاق
+                        المريض</a></li>
+                <li><a href="recrutement-ar.php"
+                        class="<?php echo ($current_page == 'recrutement-ar.php') ? 'active' : ''; ?>">التوظيف</a></li>
+                <li><a href="contact-ar.php"
+                        class="<?php echo ($current_page == 'contact-ar.php') ? 'active' : ''; ?>">اتصل
+                        بنا</a></li>
                 <?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
-                            <i class="fas fa-user-shield"></i> Admin <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-user-shield"></i> المشرف <i class="fas fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="admin-actualites.php"><i class="fas fa-cog"></i> Paramètres</a></li>
-                            <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+                            <li><a href="admin-actualites.php"><i class="fas fa-cog"></i> الإعدادات</a></li>
+                            <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
                         </ul>
                     </li>
                 <?php endif; ?>
-                
+
                 <!-- Language switcher for desktop -->
                 <div class="language-switcher desktop-lang-switcher">
-                    <button class="lang-btn" onclick="switchLanguage('ar')">
-                        <i class="fas fa-globe"></i> عربي
+                    <button class="lang-btn" onclick="switchLanguage('fr')">
+                        <i class="fas fa-globe"></i> Français
                     </button>
                 </div>
             </ul>
@@ -100,6 +105,25 @@ $hospital_name = "EPH SOBHA";
     </nav>
 
     <style>
+        /* تطبيق الخط العربي */
+        body,
+        html {
+            font-family: 'Noto Sans Arabic', Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* Maintenir la direction LTR pour les informations de contact */
+        .contact-info {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .contact-info div {
+            direction: ltr;
+            text-align: left;
+        }
+
         /* Styles pour le bouton de changement de langue */
         .language-switcher {
             display: flex;
@@ -107,7 +131,7 @@ $hospital_name = "EPH SOBHA";
         }
 
         .desktop-lang-switcher {
-            margin-left: auto;
+            margin-right: auto;
         }
 
         .mobile-lang-switcher {
@@ -133,7 +157,7 @@ $hospital_name = "EPH SOBHA";
             transform: translateY(-2px);
         }
 
-        /* Styles pour le menu déroulant */
+        /* أنماط القائمة المنسدلة */
         .dropdown {
             position: relative;
         }
@@ -154,7 +178,7 @@ $hospital_name = "EPH SOBHA";
             z-index: 1000;
             border-radius: 4px;
             padding: 8px 0;
-            right: 0;
+            left: 0;
         }
 
         .dropdown-menu li {
@@ -168,6 +192,7 @@ $hospital_name = "EPH SOBHA";
             text-decoration: none;
             color: #333;
             transition: background-color 0.3s;
+            text-align: right;
         }
 
         .dropdown-menu a:hover {
@@ -178,23 +203,29 @@ $hospital_name = "EPH SOBHA";
             display: block;
         }
 
-        /* Style pour le lien de déconnexion */
+        /* نمط رابط تسجيل الخروج */
         .dropdown-menu a[href="logout.php"] {
             color: #dc3545;
         }
 
-        /* Responsive styles */
+        /* أنماط متجاوبة */
         @media (max-width: 768px) {
-            /* Cacher le language switcher du desktop */
+            .nav-menu a {
+                text-align: right !important;
+                justify-content: flex-end;
+                padding-right: 0;
+            }
+
+            /* إخفاء language switcher للسطح المكتب */
             .desktop-lang-switcher {
                 display: none;
             }
 
-            /* Afficher et positionner le language switcher mobile */
+            /* عرض وتموضع language switcher للجوال */
             .mobile-lang-switcher {
                 display: flex;
                 position: absolute;
-                right: 20px;
+                left: 20px;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 1001;
@@ -210,13 +241,13 @@ $hospital_name = "EPH SOBHA";
             .mobile-lang-switcher .lang-btn:hover {
                 transform: translateY(-50%) scale(1.05);
             }
-            
+
             .dropdown-menu {
                 position: static;
                 box-shadow: none;
                 background-color: var(--dark-color);
                 border-radius: 0;
-                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .dropdown:hover .dropdown-menu {
@@ -227,16 +258,16 @@ $hospital_name = "EPH SOBHA";
                 display: block;
             }
 
-            /* Ajuster la position du container de navigation */
+            /* ضبط موضع حاوي التنقل */
             nav .container {
                 position: relative;
             }
         }
 
-        /* Pour les très petits écrans */
+        /* للشاشات الصغيرة جداً */
         @media (max-width: 480px) {
             .mobile-lang-switcher {
-                right: 15px;
+                left: 15px;
             }
 
             .mobile-lang-switcher .lang-btn {
@@ -279,7 +310,7 @@ $hospital_name = "EPH SOBHA";
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 14px;
-            left: 75px;
+            right: 75px;
             white-space: nowrap;
             opacity: 0;
             transition: opacity 0.3s;
@@ -304,7 +335,7 @@ $hospital_name = "EPH SOBHA";
             }
         }
 
-        /* Animation du bouton */
+        /* حركة الزر */
         @keyframes pulse {
             0% {
                 box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
@@ -323,18 +354,18 @@ $hospital_name = "EPH SOBHA";
     <script>
         // Fonction pour changer de langue
         function switchLanguage(lang) {
-            if (lang === 'ar') {
+            if (lang === 'fr') {
                 // Obtenir le nom de la page actuelle
                 let currentPage = window.location.pathname.split('/').pop();
                 
-                // Supprimer l'extension .php
-                let pageName = currentPage.replace('.php', '');
+                // Supprimer le suffixe -ar.php et remplacer par .php
+                let pageName = currentPage.replace('-ar.php', '');
                 
-                // Construire l'URL de la page arabe
-                let arabicPageUrl = pageName + '-ar.php';
+                // Construire l'URL de la page française
+                let frenchPageUrl = pageName + '.php';
                 
-                // Rediriger vers la version arabe de la page actuelle
-                window.location.href = arabicPageUrl;
+                // Rediriger vers la version française de la page actuelle
+                window.location.href = frenchPageUrl;
             }
         }
 
@@ -342,7 +373,7 @@ $hospital_name = "EPH SOBHA";
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const navMenu = document.querySelector('.nav-menu');
 
-            // Gestion du dropdown sur mobile
+            // إدارة القائمة المنسدلة على الجوال
             const dropdownToggle = document.querySelector('.dropdown-toggle');
             const dropdown = document.querySelector('.dropdown');
 
@@ -353,16 +384,16 @@ $hospital_name = "EPH SOBHA";
                 });
             }
 
-            // Fonction pour basculer l'affichage du menu
+            // دالة لتبديل عرض القائمة
             function toggleMenu() {
                 navMenu.classList.toggle('show');
                 mobileMenuBtn.classList.toggle('active');
             }
 
-            // Écouteur d'événement sur le bouton du menu
+            // مستمع الأحداث على زر القائمة
             mobileMenuBtn.addEventListener('click', toggleMenu);
 
-            // Fermer le menu en cliquant sur un lien (sauf le dropdown toggle)
+            // إغلاق القائمة عند النقر على رابط (باستثناء مبدل القائمة المنسدلة)
             const navLinks = document.querySelectorAll('.nav-menu a:not(.dropdown-toggle)');
             navLinks.forEach(link => {
                 link.addEventListener('click', function () {
@@ -372,7 +403,7 @@ $hospital_name = "EPH SOBHA";
                 });
             });
 
-            // Fermer le menu en cliquant en dehors
+            // إغلاق القائمة عند النقر في الخارج
             document.addEventListener('click', function (event) {
                 const isClickInsideMenu = navMenu.contains(event.target);
                 const isClickOnButton = mobileMenuBtn.contains(event.target);
@@ -383,7 +414,7 @@ $hospital_name = "EPH SOBHA";
                 }
             });
 
-            // Ajuster le comportement lors du redimensionnement de la fenêtre
+            // ضبط السلوك عند تغيير حجم النافذة
             window.addEventListener('resize', function () {
                 if (window.innerWidth > 768 && navMenu.classList.contains('show')) {
                     navMenu.classList.remove('show');

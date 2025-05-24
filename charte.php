@@ -679,7 +679,7 @@ $tagline = "Au service de votre santé";
                 <div class="right-box" data-aos="fade-right" data-aos-delay="300">
                     <h3>L'équipe médicale</h3>
                     <p>Elle est placée sous la responsabilité d'un médecin chef de service, assisté de praticiens
-                        hospitaliers chefs d'unités, de médecins généralistes. L'un des membres de cette équipe
+                        spécialistes et de médecins généralistes. L'un des membres de cette équipe
                         s'occupera plus particulièrement de vous. Il vous donnera toutes les informations sur votre état
                         de santé ou sur les examens et traitements prescrits. Il pourra recevoir votre famille sur
                         rendez-vous.</p>
@@ -779,8 +779,6 @@ $tagline = "Au service de votre santé";
                     <p>Pour le confort et la sécurité de tous, il vous est demandé :</p>
                     <ul class="guidelines-list">
                         <li><i class="fas fa-smoking-ban"></i> De ne pas fumer à l'intérieur de l'hôpital</li>
-                        <li><i class="fas fa-wine-bottle"></i> De ne pas introduire ni consommer de boissons alcoolisées
-                        </li>
                         <li><i class="fas fa-volume-mute"></i> De ne pas troubler le repos des autres malades, de jour
                             comme de nuit</li>
                     </ul>
@@ -842,8 +840,7 @@ $tagline = "Au service de votre santé";
                         décès. Les proches du défunt pourront récupérer les documents suivants : constat de décès,
                         certificat de non-contagion et déclaration de décès du bureau des admissions.</p>
                     <p>Ces documents devront être remis à l'APC de Sobha qui déclarera le décès et remettra
-                        l'acte de décès, permettant de retirer le permis de transport de la dépouille au niveau de la
-                        Daira de Boukadir.</p>
+                        l'acte de décès, permettant de retirer le permis de transport de la dépouille au niveau de l'APC de Sobha.</p>
                     <p>Dans le cas d'un décès d'une personne d'une autre wilaya, les proches devront se déplacer au
                         siège de la wilaya de Chlef pour récupérer le permis de transport de la dépouille.</p>
                 </div>
@@ -877,7 +874,7 @@ $tagline = "Au service de votre santé";
             <div class="cta-section" data-aos="zoom-in" data-aos-delay="100">
                 <h3>Votre avis nous intéresse</h3>
                 <p>Afin d'améliorer constamment la qualité de nos services, n'hésitez pas à nous faire part de vos
-                    remarques et suggestions. Un questionnaire de satisfaction vous sera remis avant votre sortie.</p>
+                    remarques et suggestions.</p>
                 <a href="index.php#contact" class="btn btn-primary" data-aos="fade-up"
                     data-aos-delay="200">Contactez-nous</a>
             </div>
