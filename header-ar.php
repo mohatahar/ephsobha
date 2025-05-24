@@ -327,7 +327,7 @@ $hospital_name = "مستشفى الصبحة";
                 width: 50px;
                 height: 50px;
                 bottom: 20px;
-                right: 20px;
+                left: 20px;
             }
 
             .ia-floating-button i {
