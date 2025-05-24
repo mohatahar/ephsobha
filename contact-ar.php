@@ -27,14 +27,14 @@ $tagline = "في خدمة صحتكم";
             text-align: right;
         }
 
-         * {
+        * {
             font-family: 'Cairo', 'Amiri', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         /* Page Title */
         .page-title {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/contact.jpg');
-           background-size: cover;
+            background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: white;
@@ -306,6 +306,29 @@ $tagline = "في خدمة صحتكم";
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
+        .contact-info-card h3 {
+            position: relative;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info-card h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.5s ease;
+        }
+
+        .contact-info-card h3:hover::after {
+            width: 80px;
+        }
+
         .contact-info-item {
             display: flex;
             align-items: flex-start;
@@ -319,19 +342,16 @@ $tagline = "في خدمة صحتكم";
 
         .contact-info-item i {
             font-size: 1.8rem;
-            color: #4caf50;
             margin-left: 15px;
             margin-top: 5px;
         }
 
         .contact-info-item h4 {
-            color: #2a5a86;
             margin-bottom: 5px;
             font-size: 1.2rem;
         }
 
         .contact-info-item p {
-            color: #666;
             margin: 0;
         }
 
@@ -440,42 +460,10 @@ $tagline = "في خدمة صحتكم";
             }
         }
 
-        /* Style pour le bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: #4caf50;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background-color: #3d8b40;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
-        }
-
         /* RTL adjustments */
         .fa-arrow-right::before {
-            content: "\f060"; /* left arrow icon for RTL */
+            content: "\f060";
+            /* left arrow icon for RTL */
         }
 
         .bg-light {
@@ -488,12 +476,16 @@ $tagline = "في خدمة صحتكم";
             padding: 0 15px;
         }
 
-                /* Adjustments for Arabic text */
-        h1, h2, h3 {
+        /* Adjustments for Arabic text */
+        h1,
+        h2,
+        h3 {
             font-family: 'Amiri', serif;
         }
 
-        p, li, span {
+        p,
+        li,
+        span {
             font-family: 'Cairo', sans-serif;
         }
     </style>
@@ -504,7 +496,8 @@ $tagline = "في خدمة صحتكم";
     <section class="page-title" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
             <h1 data-aos="fade-down" data-aos-duration="1000">اتصل بنا</h1>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">نحن في خدمتكم للإجابة على استفساراتكم ومرافقتكم في إجراءاتكم الطبية</p>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">نحن في خدمتكم للإجابة على استفساراتكم
+                ومرافقتكم في إجراءاتكم الطبية</p>
         </div>
     </section>
 
@@ -556,7 +549,8 @@ $tagline = "في خدمة صحتكم";
                             <input type="text" class="form-control" name="name" placeholder="الاسم الكامل" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required>
+                            <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني"
+                                required>
                         </div>
                         <div class="form-group">
                             <input type="tel" class="form-control" name="phone" placeholder="رقم الهاتف">
@@ -609,17 +603,20 @@ $tagline = "في خدمة صحتكم";
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <i class="fas fa-car"></i>
                     <h3>بالسيارة</h3>
-                    <p>وصول سهل من الطريق الولائي رقم 73. اتبع اللافتات نحو الصبحة، ثم الإشارات "المستشفى" أو "المؤسسة الاستشفائية العمومية". موقف مجاني متاح للمرضى والزوار.</p>
+                    <p>وصول سهل من الطريق الولائي رقم 73. اتبع اللافتات نحو الصبحة، ثم الإشارات "المستشفى" أو "المؤسسة
+                        الاستشفائية العمومية". موقف مجاني متاح للمرضى والزوار.</p>
                 </div>
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <i class="fas fa-bus"></i>
                     <h3>بوسائل النقل العمومي</h3>
-                    <p>عدة خطوط حافلات تخدم بلدية الصبحة من وسط مدينة الشلف أو من بلدية بوقادير. محطة "مستشفى الصبحة" على بعد 100 متر من المدخل الرئيسي.</p>
+                    <p>عدة خطوط حافلات تخدم بلدية الصبحة من وسط مدينة الشلف أو من بلدية بوقادير. محطة "مستشفى الصبحة"
+                        على بعد 100 متر من المدخل الرئيسي.</p>
                 </div>
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <i class="fas fa-taxi"></i>
                     <h3>بسيارة الأجرة</h3>
-                    <p>خدمة سيارات الأجرة متاحة من جميع المدن الكبرى المحيطة. التعريفة التقريبية من بلدية بوقادير: 25 دج. موقف سيارات أجرة متاحة أمام المستشفى.</p>
+                    <p>خدمة سيارات الأجرة متاحة من جميع المدن الكبرى المحيطة. التعريفة التقريبية من بلدية بوقادير: 25
+                        دج. موقف سيارات أجرة متاحة أمام المستشفى.</p>
                 </div>
             </div>
         </div>
@@ -629,8 +626,10 @@ $tagline = "في خدمة صحتكم";
     <section class="cta-section" data-aos="fade" data-aos-duration="1200">
         <div class="container">
             <h2 data-aos="fade-up" data-aos-duration="800">هل تحتاج إلى مساعدة طبية عاجلة؟</h2>
-            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">خدمة الإستعجالات لدينا متاحة 24 ساعة و 7 أيام في الأسبوع لاستقبالكم وتقديم الرعاية اللازمة.</p>
-            <a href="services-ar.php" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">اكتشف خدماتنا <i class="fas fa-arrow-right"></i></a>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">خدمة الإستعجالات لدينا متاحة 24 ساعة و 7
+                أيام في الأسبوع لاستقبالكم وتقديم الرعاية اللازمة.</p>
+            <a href="services-ar.php" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800"
+                data-aos-delay="400">اكتشف خدماتنا <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 

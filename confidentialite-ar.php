@@ -157,36 +157,6 @@ $tagline = "في خدمة صحتكم";
                 padding: 15px;
             }
         }
-
-        /* تحسين أيقونة العودة للأعلى */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: #0056b3;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background-color: #004494;
-            transform: translateY(-3px);
-        }
     </style>
 </head>
 

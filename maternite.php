@@ -453,35 +453,6 @@ $tagline = "Au service de votre santé";
             max-width: 100%;
         }
 
-        /* Style pour le bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--maternity-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s, transform 0.3s;
-            transform: translateY(20px);
-            z-index: 999;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .back-to-top i {
-            font-size: 1.5rem;
-        }
-
         /* Accordion FAQ */
         .faq-item {
             margin-bottom: 15px;

@@ -125,13 +125,15 @@ $tagline = "Au service de votre santé";
             position: relative;
             font-weight: 700;
             font-size: 2.2rem;
+            text-align: center;
         }
 
         .section-title::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+              left: 50%; /* Position au centre horizontalement */
+    transform: translateX(-50%); /* Centre parfaitement la ligne */
             width: 60px;
             height: 4px;
             background: var(--accent-color);
@@ -245,33 +247,38 @@ $tagline = "Au service de votre santé";
             }
         }
 
-        .fb-link {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+         .fb-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 40px;
+            background: linear-gradient(45deg, #1877f2, #42a5f5);
             color: white;
             text-decoration: none;
             font-weight: 600;
             border-radius: 50px;
-            margin-top: 25px;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+            margin: 15px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 30px rgba(24, 119, 242, 0.3);
             position: relative;
             overflow: hidden;
-            z-index: 1;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+            min-width: 280px;
         }
 
         .fb-link::before {
             content: '';
             position: absolute;
             top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 0.5s ease;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+            z-index: 1;
         }
 
         .fb-link:hover {
@@ -280,7 +287,7 @@ $tagline = "Au service de votre santé";
         }
 
         .fb-link:hover::before {
-            opacity: 1;
+            left: 100%;
         }
 
         .fb-link i {
@@ -334,40 +341,7 @@ $tagline = "Au service de votre santé";
             margin-right: auto;
         }
 
-        /* Bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transform: translateY(20px) scale(0.9);
-            z-index: 999;
-            box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
-        }
 
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(0, 180, 216, 0.5);
-        }
-
-        .back-to-top i {
-            font-size: 1.8rem;
-        }
 
         /* Pulse effect */
         .pulse {
@@ -549,7 +523,7 @@ $tagline = "Au service de votre santé";
 
                 <a href="<?php echo $facebook_page_url; ?>" target="_blank" class="fb-link pulse" data-aos="fade-up"
                     data-aos-delay="650">
-                    <i class="fab fa-facebook-f"></i> Visitez notre page Facebook
+                    <i class="fab fa-facebook"></i> Visitez notre page Facebook
                 </a>
             </div>
         </div>

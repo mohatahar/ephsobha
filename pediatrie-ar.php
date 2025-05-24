@@ -283,35 +283,6 @@ $tagline = "في خدمة صحتكم";
             max-width: 100%;
         }
 
-        /* نمط زر العودة إلى الأعلى */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s, transform 0.3s;
-            transform: translateY(20px);
-            z-index: 999;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .back-to-top i {
-            font-size: 1.5rem;
-        }
-
         /* أنماط الأسئلة الشائعة */
         .faq-container {
             margin: 40px 0;

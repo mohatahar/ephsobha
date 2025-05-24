@@ -401,38 +401,6 @@ $text_align = ($actualite['langue'] == 'ar') ? 'right' : 'left';
             font-size: 0.8rem;
         }
 
-        /* Bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            <?php echo $actualite['langue'] == 'ar' ? 'left' : 'right'; ?>
-            : 30px;
-            width: 50px;
-            height: 50px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 99;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-5px);
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .actualite-header {

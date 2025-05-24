@@ -492,39 +492,6 @@ include('header.php');
                 padding: 30px 20px;
             }
         }
-        
-        /* Style pour le bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: #4caf50;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .back-to-top:hover {
-            background-color: #3d8b40;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
-        }
     </style>
 </head>
 

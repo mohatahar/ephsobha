@@ -166,7 +166,7 @@ $tagline = "Au service de votre santé";
         .service-hours p {
             margin-bottom: 10px;
         }
-        
+
         .service-card {
             background-color: #e7f5ff;
             border-left: 4px solid var(--primary-color);
@@ -260,8 +260,9 @@ $tagline = "Au service de votre santé";
             .page-content {
                 padding: 20px;
             }
-            
-            .service-list, .team-grid {
+
+            .service-list,
+            .team-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -279,35 +280,6 @@ $tagline = "Au service de votre santé";
             max-width: 100%;
         }
 
-        /* Style pour le bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s, transform 0.3s;
-            transform: translateY(20px);
-            z-index: 999;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .back-to-top i {
-            font-size: 1.5rem;
-        }
-
         @media (max-width: 768px) {
             .page-title h1 {
                 font-size: 2.2rem;
@@ -322,7 +294,7 @@ $tagline = "Au service de votre santé";
             .page-title p {
                 font-size: 1.1rem;
             }
-        }    
+        }
     </style>
 </head>
 
@@ -331,7 +303,8 @@ $tagline = "Au service de votre santé";
     <section class="page-title" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
             <h1 data-aos="fade-down" data-aos-duration="1000">Service de Médecine Interne</h1>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Diagnostic et traitement des pathologies complexes à l'EPH SOBHA</p>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Diagnostic et traitement des pathologies
+                complexes à l'EPH SOBHA</p>
         </div>
     </section>
 
@@ -340,7 +313,11 @@ $tagline = "Au service de votre santé";
         <div class="page-content">
             <div class="info-card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Service de Médecine Interne</h3>
-                <p>Le service de Médecine Interne de l'EPH SOBHA est un département pluridisciplinaire dédié au diagnostic et au traitement de pathologies complexes et multisystémiques. Notre équipe de médecins internistes qualifiés offre une approche globale et intégrée de la santé, prenant en compte l'ensemble des aspects médicaux du patient pour établir un diagnostic précis et proposer une prise en charge personnalisée.</p>
+                <p>Le service de Médecine Interne de l'EPH SOBHA est un département pluridisciplinaire dédié au
+                    diagnostic et au traitement de pathologies complexes et multisystémiques. Notre équipe de médecins
+                    internistes qualifiés offre une approche globale et intégrée de la santé, prenant en compte
+                    l'ensemble des aspects médicaux du patient pour établir un diagnostic précis et proposer une prise
+                    en charge personnalisée.</p>
             </div>
 
             <div class="service-icon" data-aos="zoom-in" data-aos-delay="200">
@@ -356,38 +333,38 @@ $tagline = "Au service de votre santé";
             <section data-aos="fade-up" data-aos-delay="300">
                 <h2 class="section-title">Nos spécialités en Médecine Interne</h2>
                 <p>Le service de Médecine Interne de l'EPH SOBHA prend en charge une grande variété de pathologies :</p>
-                
+
                 <div class="service-list">
                     <div class="service-item" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-lungs"></i>
                         <h4>Maladies respiratoires</h4>
                         <p>Asthme, BPCO, pneumopathies, infections respiratoires chroniques</p>
                     </div>
-                    
+
                     <div class="service-item" data-aos="fade-up" data-aos-delay="150">
                         <i class="fas fa-heart"></i>
                         <h4>Pathologies cardiovasculaires</h4>
                         <p>Hypertension artérielle, insuffisance cardiaque, athérosclérose</p>
                     </div>
-                    
+
                     <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-brain"></i>
                         <h4>Maladies neurologiques</h4>
                         <p>Céphalées chroniques, neuropathies, troubles neurodégénératifs</p>
                     </div>
-                    
+
                     <div class="service-item" data-aos="fade-up" data-aos-delay="250">
                         <i class="fas fa-tint"></i>
                         <h4>Maladies auto-immunes</h4>
                         <p>Lupus, polyarthrite rhumatoïde, sclérodermie, maladies inflammatoires</p>
                     </div>
-                    
+
                     <div class="service-item" data-aos="fade-up" data-aos-delay="300">
                         <i class="fas fa-disease"></i>
                         <h4>Endocrinologie</h4>
                         <p>Diabète, troubles thyroïdiens, pathologies surrénaliennes</p>
                     </div>
-                    
+
                     <div class="service-item" data-aos="fade-up" data-aos-delay="350">
                         <i class="fas fa-diagnoses"></i>
                         <h4>Diagnostics complexes</h4>
@@ -398,30 +375,43 @@ $tagline = "Au service de votre santé";
 
             <section class="service-card" data-aos="fade-up" data-aos-delay="300">
                 <h3><i class="fas fa-procedures"></i> Notre approche de soins</h3>
-                <p>La médecine interne se distingue par son approche holistique du patient. Nos médecins internistes sont formés pour :</p>
+                <p>La médecine interne se distingue par son approche holistique du patient. Nos médecins internistes
+                    sont formés pour :</p>
                 <ul class="guidelines-list">
-                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-check-circle"></i> <strong>Établir un diagnostic global</strong> en intégrant tous les symptômes et résultats d'examens</li>
-                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-check-circle"></i> <strong>Coordonner les soins</strong> entre différentes spécialités médicales</li>
-                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle"></i> <strong>Suivre les pathologies chroniques</strong> avec une vision complète du patient</li>
-                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-check-circle"></i> <strong>Personnaliser les traitements</strong> en fonction du profil spécifique de chaque patient</li>
-                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle"></i> <strong>Prévenir les complications</strong> liées aux multiples pathologies</li>
+                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-check-circle"></i> <strong>Établir un
+                            diagnostic global</strong> en intégrant tous les symptômes et résultats d'examens</li>
+                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-check-circle"></i> <strong>Coordonner
+                            les soins</strong> entre différentes spécialités médicales</li>
+                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle"></i> <strong>Suivre les
+                            pathologies chroniques</strong> avec une vision complète du patient</li>
+                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-check-circle"></i>
+                        <strong>Personnaliser les traitements</strong> en fonction du profil spécifique de chaque
+                        patient</li>
+                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle"></i> <strong>Prévenir
+                            les complications</strong> liées aux multiples pathologies</li>
                 </ul>
             </section>
 
             <section data-aos="fade-up" data-aos-delay="400">
                 <h2 class="section-title">Équipements et technologies</h2>
-                
-                <p>Notre service de Médecine Interne dispose d'équipements modernes pour assurer un diagnostic précis et une prise en charge optimale :</p>
-                
+
+                <p>Notre service de Médecine Interne dispose d'équipements modernes pour assurer un diagnostic précis et
+                    une prise en charge optimale :</p>
+
                 <ul class="guidelines-list">
-                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-check-circle"></i> Échocardiographie et échographie abdominale au lit du patient</li>
-                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-check-circle"></i> Équipement pour épreuves fonctionnelles respiratoires</li>
-                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle"></i> Accès rapide aux services d'imagerie médicale</li>
-                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-check-circle"></i> Laboratoire d'analyses médicales</li>
-                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle"></i> Monitoring continu des patients présentant des pathologies instables</li>
+                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-check-circle"></i> Échocardiographie
+                        et échographie abdominale au lit du patient</li>
+                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-check-circle"></i> Équipement pour
+                        épreuves fonctionnelles respiratoires</li>
+                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle"></i> Accès rapide aux
+                        services d'imagerie médicale</li>
+                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-check-circle"></i> Laboratoire
+                        d'analyses médicales</li>
+                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle"></i> Monitoring continu
+                        des patients présentant des pathologies instables</li>
                 </ul>
-            </section>          
-            
+            </section>
+
             <div class="special-notice" data-aos="flip-up" data-aos-delay="250">
                 <h3>Quand consulter en Médecine Interne ?</h3>
                 <p>La consultation en médecine interne est particulièrement indiquée dans les cas suivants :</p>
@@ -438,15 +428,21 @@ $tagline = "Au service de votre santé";
             <section class="service-card" data-aos="fade-up" data-aos-delay="300">
                 <h3><i class="fas fa-clipboard-list"></i> Parcours patient en Médecine Interne</h3>
                 <ol class="guidelines-list">
-                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-1"></i> <strong>Consultation initiale</strong> : Anamnèse complète et examen clinique approfondi</li>
-                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-2"></i> <strong>Examens complémentaires</strong> : Analyses biologiques, imagerie médicale selon les besoins</li>
-                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-3"></i> <strong>Synthèse diagnostique</strong> : Interprétation globale des résultats</li>
-                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-4"></i> <strong>Plan de traitement</strong> : Proposition thérapeutique personnalisée</li>
-                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-5"></i> <strong>Suivi régulier</strong> : Adaptation du traitement selon l'évolution</li>
-                    <li data-aos="fade-left" data-aos-delay="350"><i class="fas fa-6"></i> <strong>Coordination des soins</strong> : Liaison avec d'autres spécialistes si nécessaire</li>
+                    <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-1"></i> <strong>Consultation
+                            initiale</strong> : Anamnèse complète et examen clinique approfondi</li>
+                    <li data-aos="fade-left" data-aos-delay="150"><i class="fas fa-2"></i> <strong>Examens
+                            complémentaires</strong> : Analyses biologiques, imagerie médicale selon les besoins</li>
+                    <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-3"></i> <strong>Synthèse
+                            diagnostique</strong> : Interprétation globale des résultats</li>
+                    <li data-aos="fade-left" data-aos-delay="250"><i class="fas fa-4"></i> <strong>Plan de
+                            traitement</strong> : Proposition thérapeutique personnalisée</li>
+                    <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-5"></i> <strong>Suivi
+                            régulier</strong> : Adaptation du traitement selon l'évolution</li>
+                    <li data-aos="fade-left" data-aos-delay="350"><i class="fas fa-6"></i> <strong>Coordination des
+                            soins</strong> : Liaison avec d'autres spécialistes si nécessaire</li>
                 </ol>
             </section>
-            
+
             <div class="cta-section" data-aos="zoom-in" data-aos-delay="100">
                 <h3>Besoin d'une consultation en Médecine Interne ?</h3>
                 <p>Pour prendre rendez-vous ou obtenir plus d'informations sur notre service :</p>
@@ -454,7 +450,8 @@ $tagline = "Au service de votre santé";
                     <i class="fas fa-phone-alt"></i> +213 27 71 91 97
                 </a>
                 <p class="mt-3">Pour toute autre question :</p>
-                <a href="index.php#contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="250">Contactez-nous</a>
+                <a href="index.php#contact" class="btn btn-primary" data-aos="fade-up"
+                    data-aos-delay="250">Contactez-nous</a>
             </div>
         </div>
     </div>
@@ -503,6 +500,7 @@ $tagline = "Au service de votre santé";
         });
     </script>
 </body>
+
 </html>
 
 <?php include('footer.php'); ?>

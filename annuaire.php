@@ -208,35 +208,6 @@ $tagline = "Au service de votre santé";
             background-color: #005d91;
         }
 
-        /* Bouton retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s, transform 0.3s;
-            transform: translateY(20px);
-            z-index: 999;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .back-to-top i {
-            font-size: 1.5rem;
-        }
-
         /* Responsive styles */
         @media (max-width: 768px) {
             .page-content {

@@ -650,7 +650,7 @@ $tagline = "Au service de votre santé";
     <!-- Facility Gallery Section -->
     <section class="section bg-light">
         <div class="container">
-            <div class="gallery-title" data-aos="fade-up">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Nos Installations</h2>
                 <p>Découvrez nos installations médicales conçues pour offrir le meilleur environnement de soins possible</p>
             </div>

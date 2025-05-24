@@ -299,6 +299,29 @@ $tagline = "Au service de votre santé";
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
+        .contact-info-card h3 {
+            position: relative;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info-card h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.5s ease;
+        }
+
+        .contact-info-card h3:hover::after {
+            width: 80px;
+        }
+
         .contact-info-item {
             display: flex;
             align-items: flex-start;
@@ -312,19 +335,16 @@ $tagline = "Au service de votre santé";
 
         .contact-info-item i {
             font-size: 1.8rem;
-            color: #4caf50;
             margin-right: 15px;
             margin-top: 5px;
         }
 
         .contact-info-item h4 {
-            color: #2a5a86;
             margin-bottom: 5px;
             font-size: 1.2rem;
         }
 
         .contact-info-item p {
-            color: #666;
             margin: 0;
         }
 
@@ -428,39 +448,6 @@ $tagline = "Au service de votre santé";
             .page-title p {
                 font-size: 1.1rem;
             }
-        }
-
-        /* Style pour le bouton de retour en haut */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: #4caf50;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background-color: #3d8b40;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
         }
     </style>
 </head>
@@ -586,7 +573,8 @@ $tagline = "Au service de votre santé";
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <i class="fas fa-bus"></i>
                     <h3>En transport en commun</h3>
-                    <p>Plusieurs lignes de bus desservent la commune de Sobha depuis le centre-ville de Chlef ou la commune de Boukadir. Arrêt "Hôpital Sobha" à 100m de l'entrée principale.</p>
+                    <p>Plusieurs lignes de bus desservent la commune de Sobha depuis le centre-ville de Chlef ou la
+                        commune de Boukadir. Arrêt "Hôpital Sobha" à 100m de l'entrée principale.</p>
                 </div>
                 <div class="transport-option" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <i class="fas fa-taxi"></i>

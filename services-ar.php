@@ -445,36 +445,6 @@ $tagline = "في خدمة صحتكم";
             transform: translateY(0);
         }
 
-        /* Back to top button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: #4caf50;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-            z-index: 1000;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            background-color: #3d8b40;
-            transform: translateY(-3px);
-        }
-
         /* Responsive Design */
         @media (max-width: 991px) {
             .feature-cards {
@@ -713,7 +683,7 @@ $tagline = "في خدمة صحتكم";
     <!-- Facility Gallery Section -->
     <section class="section bg-light">
         <div class="container">
-            <div class="gallery-title" data-aos="fade-up">
+            <div class="section-title" data-aos="fade-up">
                 <h2>مرافقنا</h2>
                 <p>اكتشف مرافقنا الطبية المصممة لتوفير أفضل بيئة رعاية ممكنة</p>
             </div>
