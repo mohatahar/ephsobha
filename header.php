@@ -33,7 +33,7 @@ $hospital_name = "EPH SOBHA";
                 <div class="contact-info">
                     <div>
                         <i class="fas fa-phone"></i>
-                        <span>+213 27 71 91 97</span>
+                        <span>+213 27 03 08 36</span>
                     </div>
                     <div>
                         <i class="fas fa-envelope"></i>
