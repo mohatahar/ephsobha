@@ -320,7 +320,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">DSP CHLEF</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Chlef</td>
-                            <td data-label="Téléphone">+213 27 43 31 33</td>
+                            <td data-label="Téléphone">+213 20 65 35 47</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.16285, 1.34394, 'DSP CHLEF')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -329,7 +329,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Sobha</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Sobha</td>
-                            <td data-label="Téléphone">+213 27 71 91 97</td>
+                            <td data-label="Téléphone">+213 27 03 08 36</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.10538, 1.10444, 'EPH Sobha')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -338,7 +338,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Soeurs bedj</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Cité Bensouna, Chlef</td>
-                            <td data-label="Téléphone">+213 27 79 84 03</td>
+                            <td data-label="Téléphone">+213 28 58 49 94</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1593, 1.3212, 'EPH Soeurs bedj')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -347,7 +347,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Ouled Mohammed</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Cité elnassr, Chlef</td>
-                            <td data-label="Téléphone">+213 27 77 33 34</td>
+                            <td data-label="Téléphone">+213 20 65 87 71</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1573, 1.3624, 'EPH Ouled Mohammed')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -356,7 +356,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Chorfa</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Hay El Badr, Chlef</td>
-                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Téléphone">+213 20 64 40 34</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1466, 1.3132, 'EPH Chorfa')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -365,7 +365,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Ain Merane</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Ain Merane</td>
-                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Téléphone">+213 28 58 10 10</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1589, 0.9622, 'EPH Ain Merane')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -374,7 +374,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">EPH Chettia</td>
                             <td data-label="Secteur"><span class="sector-public">Public</span></td>
                             <td data-label="Adresse">Chettia</td>
-                            <td data-label="Téléphone">+213 27 79 49 73</td>
+                            <td data-label="Téléphone">+213 27 73 15 84</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.2047, 1.2611, 'EPH Chettia')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -401,7 +401,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">Clinique El Hikma</td>
                             <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
                             <td data-label="Adresse">Cité 184 logement AADL, Chlef</td>
-                            <td data-label="Téléphone">+213 27 77 50 50</td>
+                            <td data-label="Téléphone">+213 20 64 35 35</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1629, 1.3298, 'Clinique El Hikma')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
@@ -419,7 +419,7 @@ $tagline = "Au service de votre santé";
                             <td data-label="Nom">Clinique Ennasr</td>
                             <td data-label="Secteur"><span class="sector-prive">Privé</span></td>
                             <td data-label="Adresse">Cité elnassr, Chlef</td>
-                            <td data-label="Téléphone">+213 27 77 83 83</td>
+                            <td data-label="Téléphone">+213 20 65 31 31</td>
                             <td data-label="Action"><button class="locate-btn"
                                     onclick="showLocation(36.1489, 1.3682, 'Clinique Ennasr')"><i
                                         class="fas fa-map-marker-alt"></i> Localiser</button></td>
