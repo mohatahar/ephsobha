@@ -483,7 +483,7 @@ $tagline = "Au service de votre santé";
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Téléphone</h4>
-                            <p>Standard: +213 27 71 91 97</p>
+                            <p>Standard: +213 27 03 08 36</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
