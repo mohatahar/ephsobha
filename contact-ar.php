@@ -522,7 +522,7 @@ $tagline = "في خدمة صحتكم";
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>الهاتف</h4>
-                            <p> 97 91 71 27 213+</p>
+                            <p> 36 08 03 27 213+</p>
                         </div>
                     </div>
                     <div class="contact-info-item">
