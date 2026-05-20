@@ -490,7 +490,7 @@ $tagline = "Au service de votre santé";
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>contact.ephsobha@gmail.com</p>
+                            <p>ephsobha2010@gmail.com</p>
                             <p>rdv.ephsobha@gmail.com (Pour les rendez-vous)</p>
                         </div>
                     </div>
