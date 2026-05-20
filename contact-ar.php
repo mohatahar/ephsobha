@@ -529,7 +529,7 @@ $tagline = "في خدمة صحتكم";
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>البريد الإلكتروني</h4>
-                            <p>contact.ephsobha@gmail.com</p>
+                            <p>ephsobha2010@gmail.com</p>
                             <p>rdv.ephsobha@gmail.com (للمواعيد)</p>
                         </div>
                     </div>
