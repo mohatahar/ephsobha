@@ -39,7 +39,7 @@ $hospital_name = "مستشفى الصبحة";
                     </div>
                     <div>
                         <i class="fas fa-envelope"></i>
-                        <span>contact.ephsobha@gmail.com</span>
+                        <span>ephsobha2010@gmail.com</span>
                     </div>
                 </div>
             </div>
